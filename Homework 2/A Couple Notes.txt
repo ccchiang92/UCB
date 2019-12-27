@@ -1,0 +1,6 @@
+First 
+	I Looped through the worksheets from the start so both solutions have code looping thorugh each worksheet
+
+Second
+	I'm using the datatype LongLong, documentation was a little confusing, but it works for my version
+	which is office 365, not sure if it'll for every version, (maybe ULong instead)
