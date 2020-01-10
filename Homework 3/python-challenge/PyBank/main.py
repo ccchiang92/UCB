@@ -1,6 +1,6 @@
+#import libraries and setting csv data path
 import os
 import csv
-
 bank_csv = os.path.join('.', 'Resources', 'budget_data.csv')
 
 # Using code from class activities to read csv
@@ -27,7 +27,8 @@ with open(bank_csv, 'r') as csvfile:
         elif gain < greatest_loss:
             greatest_loss = gain
             greatest_lossDate = row[0]
-    # write to an output text file
+
+    # write to an output text file using \n for new lines
     outpath = os.path.join('.', "Output.txt")
     with open(outpath, 'w') as text:
         text.write("Financial Analysis \n")
@@ -41,6 +42,8 @@ with open(bank_csv, 'r') as csvfile:
             f"Greatest Increase in Profits: {greatest_lossDate} (${greatest_loss}) \n")
 
     # print out results in terminal
+    print("Financial Analysis")
+    print("-"*50)
     print(f"Total Months: {total_months}")
     print(f"Total: ${net_gain}")
     print(f"Average Change: ${net_gain/total_months}")
