@@ -2,7 +2,7 @@
 import os
 import csv
 # Downloaded abbreviations into same folder and import
-import us_state_abbrev as state_abb
+import us_state_abbrev as abbrev
 boss_csv = os.path.join('.', 'Resources', 'employee_data.csv')
 
 # Using code from class activities to read csv
@@ -15,7 +15,6 @@ with open(boss_csv, 'r') as csvfile:
 
     # Using class activity code as starter for writing csv
     with open(output_path, 'w', newline='') as csvfile:
-        # Initialize csv.writer
         csvwriter = csv.writer(csvfile, delimiter=',')
         # Write header for output
         csvwriter.writerow(
@@ -35,6 +34,6 @@ with open(boss_csv, 'r') as csvfile:
                 else:
                     SSN += num
             # Calling the dictionary from import
-            state = state_abb.us_state_abbrev[row[4]]
+            state = abbrev.us_state_abbrev[row[4]]
             # Write processed info onto output
             csvwriter.writerow([ID, first_name, last_name, DOB, SSN, state])
