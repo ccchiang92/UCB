@@ -13,7 +13,7 @@ with open(poll_csv, 'r') as csvfile:
     # Using a dictionary to store candidates as a name and vote pair
     total_votes = 0
     candidates = {}
-    # skipping header using next()
+    # Skipping header using next()
     header = next(csvreader)
 
     for row in csvreader:

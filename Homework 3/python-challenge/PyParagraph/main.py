@@ -2,7 +2,7 @@
 import os
 import re
 # Set file to read, input dfferent number to read different files
-filenumber = input("Please Enter File Number ")
+filenumber = input("Please Enter File Number, 1, 2, or 3")
 file_path = os.path.join(".", "raw_data", f"paragraph_{filenumber}.txt")
 
 with open(file_path, "r", encoding="utf-8") as text:
