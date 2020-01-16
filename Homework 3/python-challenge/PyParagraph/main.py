@@ -30,6 +30,8 @@ with open(file_path, "r", encoding="utf-8") as text:
     print("Paragraph Analysis")
     print("-" * 50)
     print(f"Approximate Word Count: {len(words)}")
+    # Very basic sentence count, does not take in account of
+    # abbreveations, sentences interupted by new line, etc
     print(f"Approximate Sentence Count: {len(sentances)}")
     print(f"Average Letter Count: {round(letter_count/len(words),4)}")
     print(f"Average Sentence Length: {round(len(words)/len(sentances),4)}")
