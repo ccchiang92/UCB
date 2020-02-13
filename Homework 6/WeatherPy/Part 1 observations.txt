@@ -1,4 +1,8 @@
-1. There is very strong correlation between latitude and temperatures, the farther from the equator the colder it gets
-2. The temperature correlation is strong for northen hemisphere cities, but fairly weak for southern cities in the random cities choosen
-3. Wind speed, humidity and cloudiness all show very little correlation, almost non existent for most. 
+1. From the linear regression plots, with high r square values and the spread of data points
+   we can see there is very strong correlation between latitude and temperatures,
+   the farther from the equator the colder it gets.
+2. Since r squared is much higher in the north, the temperature correlation is strong for northen hemisphere cities,
+   but fairly weak for southern cities in the random cities choosen
+3. Wind speed, humidity and cloudiness all show very little correlation, as the r values are super low, almost non existent for most. 
+   We can also see from the spread of the data points, there is no clear distinct shape.
    only humidity in the northen hemisphere have a minor correlation to latitude.
