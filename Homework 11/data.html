@@ -1,0 +1,5803 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Data Table 300</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Another bootstrap link -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- Not using another style sheet -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body style="background-color:lightgrey";>
+  
+  <div class="container--fluid bg-secondary" >
+
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand bg-secondary ml-auto" href="./index.html">Box Office Analytics Visualization</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./Nom.html">Nominations Vs Box office</a>
+                  <a class="dropdown-item" href="./Open.html">Opening vs Box office</a>
+                  <a class="dropdown-item" href="./Budget.html">Budget Vs Return</a>
+                  <a class="dropdown-item" href="./Trailer.html">Trailer views Vs Box office</a>
+                  <a class="dropdown-item" href="./Critic.html">Critic score Vs Box office</a>
+                  <a class="dropdown-item" href="./Month.html">Release month Vs Box office</a>
+                  <a class="dropdown-item" href="./SourceMean.html">Source Vs Mean Box office</a>
+                  <a class="dropdown-item" href="./SourceMedian.html">Source Vs Median Return</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compare.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./data.html">Data Table</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row mt-auto">
+      <div class="col-md-12 mr-auto ml-auto" style="background-color:slategray";>
+        <h1 class="text-light text-center"><strong>Data Table</strong></h1>
+        <hr style="border-top: 3px solid black;">
+        <p class="text-light text-center">
+          Here is a truncated down version of the data table we used for this project for quick and easy viewing.<br>
+          The movies are ordered by release date. Only include the first 300 movies for performance. <br>
+          <a style="color: rgb(104, 1, 1)" href="./data_full.html">Full table html here</a><br>
+          <a style="color: rgb(104, 1, 1)" href="./Resources/final.csv" target=_blank>You can view or download the full CSV file here</a>
+        </p>
+        <div class="table-responsive">
+          <table border="1" class="table text-light table-striped table-hover table-sm w-auto">
+            <thead class="thead-dark">
+              <tr style="text-align: right;">
+                <th></th>
+                <th>Released</th>
+                <th>Title</th>
+                <th>Source</th>
+                <th>Infl. Adj. Dom. Box Office</th>
+                <th>Worldwide Box Office</th>
+                <th>rated</th>
+                <th>runtime</th>
+                <th>metascore</th>
+                <th>imdbRating</th>
+                <th>nominations</th>
+                <th>Trailer Views</th>
+                <th>Infl. Adj. Production Budget</th>
+                <th>Infl. Adj. International Box Office</th>
+                <th>Infl. Adj. Worldwide Box Office</th>
+                <th>Infl. Adj. Opening Weekend Revenue</th>
+                <th>Genre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0</th>
+                <td>2000-11-17 00:00:00+00:00</td>
+                <td>How the Grinch Stole Christmas</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>438980791</td>
+                <td>345141403</td>
+                <td>PG</td>
+                <td>104.0</td>
+                <td>46.0</td>
+                <td>6.1</td>
+                <td>37.0</td>
+                <td>3226963.0</td>
+                <td>207635884</td>
+                <td>143651245</td>
+                <td>582632036</td>
+                <td>94230110</td>
+                <td>Family</td>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>Cast Away</td>
+                <td>Original Screenplay</td>
+                <td>384884272</td>
+                <td>427230516</td>
+                <td>PG-13</td>
+                <td>143.0</td>
+                <td>73.0</td>
+                <td>7.8</td>
+                <td>35.0</td>
+                <td>598437.0</td>
+                <td>140028520</td>
+                <td>318932868</td>
+                <td>703817140</td>
+                <td>47582360</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>2000-05-24 00:00:00+00:00</td>
+                <td>Mission: Impossible II</td>
+                <td>Based on TV</td>
+                <td>364078672</td>
+                <td>549588516</td>
+                <td>PG-13</td>
+                <td>123.0</td>
+                <td>59.0</td>
+                <td>6.1</td>
+                <td>20.0</td>
+                <td>1171309.0</td>
+                <td>202820032</td>
+                <td>564817665</td>
+                <td>928896337</td>
+                <td>97768208</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>2000-05-05 00:00:00+00:00</td>
+                <td>Gladiator</td>
+                <td>Original Screenplay</td>
+                <td>317130387</td>
+                <td>457683805</td>
+                <td>R</td>
+                <td>155.0</td>
+                <td>67.0</td>
+                <td>8.5</td>
+                <td>104.0</td>
+                <td>2259163.0</td>
+                <td>174039682</td>
+                <td>456220527</td>
+                <td>773350914</td>
+                <td>58833889</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>2000-12-15 00:00:00+00:00</td>
+                <td>What Women Want</td>
+                <td>Original Screenplay</td>
+                <td>303565725</td>
+                <td>374105123</td>
+                <td>PG-13</td>
+                <td>127.0</td>
+                <td>47.0</td>
+                <td>6.4</td>
+                <td>8.0</td>
+                <td>1313029.0</td>
+                <td>107938835</td>
+                <td>317672296</td>
+                <td>621238021</td>
+                <td>55820225</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>2000-06-30 00:00:00+00:00</td>
+                <td>The Perfect Storm</td>
+                <td>Based on Factual Book/Article</td>
+                <td>308655646</td>
+                <td>328711434</td>
+                <td>PG-13</td>
+                <td>130.0</td>
+                <td>59.0</td>
+                <td>6.4</td>
+                <td>25.0</td>
+                <td>86797.0</td>
+                <td>202820036</td>
+                <td>246921563</td>
+                <td>555577209</td>
+                <td>69846221</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td>2000-10-06 00:00:00+00:00</td>
+                <td>Meet the Parents</td>
+                <td>Original Screenplay</td>
+                <td>280553027</td>
+                <td>330425040</td>
+                <td>PG-13</td>
+                <td>108.0</td>
+                <td>73.0</td>
+                <td>7.0</td>
+                <td>14.0</td>
+                <td>17435.0</td>
+                <td>92828472</td>
+                <td>277135183</td>
+                <td>557688210</td>
+                <td>48310130</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2000-07-14 00:00:00+00:00</td>
+                <td>X-Men</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>265862778</td>
+                <td>296872367</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>64.0</td>
+                <td>7.4</td>
+                <td>26.0</td>
+                <td>54748336.0</td>
+                <td>126762518</td>
+                <td>235901075</td>
+                <td>501763853</td>
+                <td>92065885</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>8</th>
+                <td>2000-07-07 00:00:00+00:00</td>
+                <td>Scary Movie</td>
+                <td>Original Screenplay</td>
+                <td>265389623</td>
+                <td>277200000</td>
+                <td>R</td>
+                <td>88.0</td>
+                <td>48.0</td>
+                <td>6.2</td>
+                <td>5.0</td>
+                <td>874781.0</td>
+                <td>32113171</td>
+                <td>203124647</td>
+                <td>468514270</td>
+                <td>71572939</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>9</th>
+                <td>2000-07-21 00:00:00+00:00</td>
+                <td>What Lies Beneath</td>
+                <td>Original Screenplay</td>
+                <td>262760705</td>
+                <td>288693989</td>
+                <td>PG-13</td>
+                <td>130.0</td>
+                <td>51.0</td>
+                <td>6.6</td>
+                <td>5.0</td>
+                <td>131642.0</td>
+                <td>152115023</td>
+                <td>225180328</td>
+                <td>487941033</td>
+                <td>50202959</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>10</th>
+                <td>2000-05-19 00:00:00+00:00</td>
+                <td>Dinosaur</td>
+                <td>Original Screenplay</td>
+                <td>232817219</td>
+                <td>356148063</td>
+                <td>PG</td>
+                <td>82.0</td>
+                <td>56.0</td>
+                <td>6.5</td>
+                <td>21.0</td>
+                <td>18994875.0</td>
+                <td>215496281</td>
+                <td>369132454</td>
+                <td>601949673</td>
+                <td>65671183</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>11</th>
+                <td>2000-12-08 00:00:00+00:00</td>
+                <td>Crouching Tiger, Hidden Dragon</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>207214821</td>
+                <td>213514672</td>
+                <td>PG-13</td>
+                <td>120.0</td>
+                <td>94.0</td>
+                <td>7.8</td>
+                <td>133.0</td>
+                <td>4082516.0</td>
+                <td>24270129</td>
+                <td>138253764</td>
+                <td>345468585</td>
+                <td>1073071</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>12</th>
+                <td>2000-03-17 00:00:00+00:00</td>
+                <td>Erin Brockovich</td>
+                <td>Based on Real Life Events</td>
+                <td>212198237</td>
+                <td>257805243</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>73.0</td>
+                <td>7.3</td>
+                <td>59.0</td>
+                <td>30692.0</td>
+                <td>84508347</td>
+                <td>223535662</td>
+                <td>435733899</td>
+                <td>47558703</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>13</th>
+                <td>2000-11-03 00:00:00+00:00</td>
+                <td>Charlie's Angels</td>
+                <td>Based on TV</td>
+                <td>211585489</td>
+                <td>259736090</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>52.0</td>
+                <td>5.5</td>
+                <td>30.0</td>
+                <td>21055839.0</td>
+                <td>151970082</td>
+                <td>226993566</td>
+                <td>438579055</td>
+                <td>67759322</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>14</th>
+                <td>2000-12-27 00:00:00+00:00</td>
+                <td>Traffic</td>
+                <td>Based on TV</td>
+                <td>199785980</td>
+                <td>208300000</td>
+                <td>R</td>
+                <td>147.0</td>
+                <td>86.0</td>
+                <td>7.6</td>
+                <td>86.0</td>
+                <td>20534.0</td>
+                <td>77269535</td>
+                <td>135531609</td>
+                <td>335317589</td>
+                <td>297366</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>15</th>
+                <td>2000-07-28 00:00:00+00:00</td>
+                <td>Nutty Professor II: The Klumps</td>
+                <td>Remake</td>
+                <td>208411010</td>
+                <td>166307945</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>38.0</td>
+                <td>4.4</td>
+                <td>14.0</td>
+                <td>4011.0</td>
+                <td>141974021</td>
+                <td>72677177</td>
+                <td>281088187</td>
+                <td>71863920</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>16</th>
+                <td>2000-06-02 00:00:00+00:00</td>
+                <td>Big Momma's House</td>
+                <td>Original Screenplay</td>
+                <td>198695076</td>
+                <td>173559438</td>
+                <td>PG-13</td>
+                <td>99.0</td>
+                <td>33.0</td>
+                <td>5.2</td>
+                <td>9.0</td>
+                <td>15309.0</td>
+                <td>55775509</td>
+                <td>94649348</td>
+                <td>293344424</td>
+                <td>43371443</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>17</th>
+                <td>2000-09-29 00:00:00+00:00</td>
+                <td>Remember the Titans</td>
+                <td>Based on Real Life Events</td>
+                <td>195321944</td>
+                <td>136706683</td>
+                <td>PG</td>
+                <td>113.0</td>
+                <td>48.0</td>
+                <td>7.8</td>
+                <td>18.0</td>
+                <td>1713860.0</td>
+                <td>50665089</td>
+                <td>35553267</td>
+                <td>230875211</td>
+                <td>35306526</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>18</th>
+                <td>2000-06-28 00:00:00+00:00</td>
+                <td>The Patriot</td>
+                <td>Original Screenplay</td>
+                <td>191547197</td>
+                <td>215300000</td>
+                <td>R</td>
+                <td>165.0</td>
+                <td>63.0</td>
+                <td>7.2</td>
+                <td>17.0</td>
+                <td>83668.0</td>
+                <td>185918363</td>
+                <td>172345744</td>
+                <td>363892941</td>
+                <td>37882911</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>19</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>Miss Congeniality</td>
+                <td>Original Screenplay</td>
+                <td>175650939</td>
+                <td>213420951</td>
+                <td>PG-13</td>
+                <td>109.0</td>
+                <td>43.0</td>
+                <td>6.2</td>
+                <td>5.0</td>
+                <td>779630.0</td>
+                <td>74004914</td>
+                <td>175331265</td>
+                <td>350982204</td>
+                <td>22783129</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>20</th>
+                <td>2000-06-21 00:00:00+00:00</td>
+                <td>Chicken Run</td>
+                <td>Original Screenplay</td>
+                <td>180499546</td>
+                <td>227793915</td>
+                <td>G</td>
+                <td>84.0</td>
+                <td>88.0</td>
+                <td>7.0</td>
+                <td>25.0</td>
+                <td>78714.0</td>
+                <td>70987012</td>
+                <td>204510201</td>
+                <td>385009747</td>
+                <td>29588336</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>21</th>
+                <td>2000-06-09 00:00:00+00:00</td>
+                <td>Gone in 60 Seconds</td>
+                <td>Remake</td>
+                <td>171793647</td>
+                <td>232643008</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>35.0</td>
+                <td>6.5</td>
+                <td>6.0</td>
+                <td>22822.0</td>
+                <td>174594240</td>
+                <td>221411862</td>
+                <td>393205509</td>
+                <td>42822149</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>22</th>
+                <td>2000-11-22 00:00:00+00:00</td>
+                <td>Unbreakable</td>
+                <td>Original Screenplay</td>
+                <td>160164067</td>
+                <td>248099143</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>62.0</td>
+                <td>7.3</td>
+                <td>13.0</td>
+                <td>1630633.0</td>
+                <td>123484416</td>
+                <td>258119367</td>
+                <td>418283434</td>
+                <td>51136246</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>23</th>
+                <td>2000-06-23 00:00:00+00:00</td>
+                <td>Me, Myself &amp; Irene</td>
+                <td>Original Screenplay</td>
+                <td>153080104</td>
+                <td>149270999</td>
+                <td>R</td>
+                <td>116.0</td>
+                <td>49.0</td>
+                <td>6.6</td>
+                <td>4.0</td>
+                <td>944378.0</td>
+                <td>86198511</td>
+                <td>99212796</td>
+                <td>252292900</td>
+                <td>40917901</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>24</th>
+                <td>2000-08-04 00:00:00+00:00</td>
+                <td>Space Cowboys</td>
+                <td>Original Screenplay</td>
+                <td>152860316</td>
+                <td>128874043</td>
+                <td>PG-13</td>
+                <td>130.0</td>
+                <td>73.0</td>
+                <td>6.4</td>
+                <td>8.0</td>
+                <td>296394.0</td>
+                <td>109844957</td>
+                <td>64926819</td>
+                <td>217787135</td>
+                <td>30577077</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>25</th>
+                <td>2000-12-15 00:00:00+00:00</td>
+                <td>The Emperor's New Groove</td>
+                <td>Original Screenplay</td>
+                <td>147823260</td>
+                <td>169296573</td>
+                <td>G</td>
+                <td>78.0</td>
+                <td>70.0</td>
+                <td>7.3</td>
+                <td>26.0</td>
+                <td>2376205.0</td>
+                <td>165541918</td>
+                <td>132433534</td>
+                <td>280256794</td>
+                <td>16243472</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>26</th>
+                <td>2000-02-04 00:00:00+00:00</td>
+                <td>Scream 3</td>
+                <td>Original Screenplay</td>
+                <td>150658228</td>
+                <td>161838076</td>
+                <td>R</td>
+                <td>116.0</td>
+                <td>56.0</td>
+                <td>5.5</td>
+                <td>5.0</td>
+                <td>665518.0</td>
+                <td>67606677</td>
+                <td>122875135</td>
+                <td>273533363</td>
+                <td>58671342</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>27</th>
+                <td>2000-04-21 00:00:00+00:00</td>
+                <td>U-571</td>
+                <td>Original Screenplay</td>
+                <td>130288259</td>
+                <td>127630030</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>62.0</td>
+                <td>6.6</td>
+                <td>10.0</td>
+                <td>867362.0</td>
+                <td>104790349</td>
+                <td>85427797</td>
+                <td>215716056</td>
+                <td>33048358</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>28</th>
+                <td>2000-11-17 00:00:00+00:00</td>
+                <td>Rugrats in Paris</td>
+                <td>Based on TV</td>
+                <td>128873212</td>
+                <td>103284813</td>
+                <td>G</td>
+                <td>78.0</td>
+                <td>62.0</td>
+                <td>6.1</td>
+                <td>7.0</td>
+                <td>821545.0</td>
+                <td>50537564</td>
+                <td>45118884</td>
+                <td>173992096</td>
+                <td>38270723</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>29</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>The Family Man</td>
+                <td>Original Screenplay</td>
+                <td>125423938</td>
+                <td>124715863</td>
+                <td>PG-13</td>
+                <td>125.0</td>
+                <td>42.0</td>
+                <td>6.8</td>
+                <td>6.0</td>
+                <td>10126.0</td>
+                <td>99327224</td>
+                <td>81037404</td>
+                <td>206461342</td>
+                <td>25004064</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>30</th>
+                <td>2000-08-04 00:00:00+00:00</td>
+                <td>Hollow Man</td>
+                <td>Original Screenplay</td>
+                <td>123736001</td>
+                <td>191200000</td>
+                <td>R</td>
+                <td>112.0</td>
+                <td>24.0</td>
+                <td>5.8</td>
+                <td>11.0</td>
+                <td>255729.0</td>
+                <td>152115018</td>
+                <td>199423904</td>
+                <td>323159905</td>
+                <td>44644720</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>31</th>
+                <td>2000-12-15 00:00:00+00:00</td>
+                <td>Chocolat</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>115118524</td>
+                <td>152500343</td>
+                <td>PG-13</td>
+                <td>121.0</td>
+                <td>64.0</td>
+                <td>7.2</td>
+                <td>31.0</td>
+                <td>450786.0</td>
+                <td>40358614</td>
+                <td>131069576</td>
+                <td>246188100</td>
+                <td>254459</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>32</th>
+                <td>2000-06-16 00:00:00+00:00</td>
+                <td>Shaft</td>
+                <td>Remake</td>
+                <td>118865832</td>
+                <td>107190108</td>
+                <td>R</td>
+                <td>99.0</td>
+                <td>50.0</td>
+                <td>5.9</td>
+                <td>13.0</td>
+                <td>14742786.0</td>
+                <td>89600711</td>
+                <td>62303336</td>
+                <td>181169168</td>
+                <td>36701562</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>33</th>
+                <td>2000-07-07 00:00:00+00:00</td>
+                <td>The Kid</td>
+                <td>Original Screenplay</td>
+                <td>117785003</td>
+                <td>69688384</td>
+                <td>Not Rated</td>
+                <td>68.0</td>
+                <td>NaN</td>
+                <td>8.3</td>
+                <td>NaN</td>
+                <td>325672.0</td>
+                <td>109860851</td>
+                <td>0</td>
+                <td>117785003</td>
+                <td>21444375</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>34</th>
+                <td>2000-05-19 00:00:00+00:00</td>
+                <td>Road Trip</td>
+                <td>Original Screenplay</td>
+                <td>115819721</td>
+                <td>119739110</td>
+                <td>R</td>
+                <td>93.0</td>
+                <td>55.0</td>
+                <td>6.4</td>
+                <td>9.0</td>
+                <td>1929200.0</td>
+                <td>27042671</td>
+                <td>86559367</td>
+                <td>202379088</td>
+                <td>26170552</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>35</th>
+                <td>2000-12-08 00:00:00+00:00</td>
+                <td>Vertical Limit</td>
+                <td>Original Screenplay</td>
+                <td>114393550</td>
+                <td>213500000</td>
+                <td>PG-13</td>
+                <td>124.0</td>
+                <td>48.0</td>
+                <td>5.9</td>
+                <td>3.0</td>
+                <td>NaN</td>
+                <td>125297141</td>
+                <td>242285645</td>
+                <td>356679195</td>
+                <td>25907848</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>36</th>
+                <td>2000-11-22 00:00:00+00:00</td>
+                <td>102 Dalmatians</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>112448565</td>
+                <td>66941559</td>
+                <td>G</td>
+                <td>100.0</td>
+                <td>35.0</td>
+                <td>4.9</td>
+                <td>6.0</td>
+                <td>69636.0</td>
+                <td>142783170</td>
+                <td>0</td>
+                <td>112448565</td>
+                <td>33400092</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>37</th>
+                <td>2000-04-07 00:00:00+00:00</td>
+                <td>Rules of Engagement</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>103645864</td>
+                <td>71719931</td>
+                <td>R</td>
+                <td>128.0</td>
+                <td>45.0</td>
+                <td>6.4</td>
+                <td>2.0</td>
+                <td>417509.0</td>
+                <td>101410013</td>
+                <td>17572788</td>
+                <td>121218652</td>
+                <td>25371401</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>38</th>
+                <td>2000-08-18 00:00:00+00:00</td>
+                <td>The Cell</td>
+                <td>Original Screenplay</td>
+                <td>103575052</td>
+                <td>85911226</td>
+                <td>R</td>
+                <td>107.0</td>
+                <td>40.0</td>
+                <td>6.3</td>
+                <td>24.0</td>
+                <td>56470.0</td>
+                <td>59155839</td>
+                <td>41629253</td>
+                <td>145204305</td>
+                <td>29603356</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>39</th>
+                <td>2000-03-10 00:00:00+00:00</td>
+                <td>Mission to Mars</td>
+                <td>Original Screenplay</td>
+                <td>102888258</td>
+                <td>106000000</td>
+                <td>PG</td>
+                <td>114.0</td>
+                <td>34.0</td>
+                <td>5.7</td>
+                <td>2.0</td>
+                <td>17791.0</td>
+                <td>152115019</td>
+                <td>76269431</td>
+                <td>179157689</td>
+                <td>38629181</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>40</th>
+                <td>2000-08-04 00:00:00+00:00</td>
+                <td>Coyote Ugly</td>
+                <td>Based on Real Life Events</td>
+                <td>102738936</td>
+                <td>113916474</td>
+                <td>PG-13</td>
+                <td>100.0</td>
+                <td>27.0</td>
+                <td>5.7</td>
+                <td>8.0</td>
+                <td>3751430.0</td>
+                <td>76057507</td>
+                <td>89798910</td>
+                <td>192537846</td>
+                <td>29272476</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>41</th>
+                <td>2000-02-18 00:00:00+00:00</td>
+                <td>The Whole Nine Yards</td>
+                <td>Original Screenplay</td>
+                <td>96783164</td>
+                <td>85527867</td>
+                <td>R</td>
+                <td>98.0</td>
+                <td>47.0</td>
+                <td>6.7</td>
+                <td>5.0</td>
+                <td>98052.0</td>
+                <td>40564003</td>
+                <td>47773198</td>
+                <td>144556362</td>
+                <td>26900147</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>42</th>
+                <td>2000-05-26 00:00:00+00:00</td>
+                <td>Shanghai Noon</td>
+                <td>Original Screenplay</td>
+                <td>96225095</td>
+                <td>71189835</td>
+                <td>PG-13</td>
+                <td>110.0</td>
+                <td>77.0</td>
+                <td>6.5</td>
+                <td>7.0</td>
+                <td>44969.0</td>
+                <td>92959177</td>
+                <td>24097604</td>
+                <td>120322699</td>
+                <td>33206818</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>43</th>
+                <td>2000-03-22 00:00:00+00:00</td>
+                <td>Romeo Must Die</td>
+                <td>Original Screenplay</td>
+                <td>94604280</td>
+                <td>91036760</td>
+                <td>R</td>
+                <td>115.0</td>
+                <td>52.0</td>
+                <td>6.1</td>
+                <td>7.0</td>
+                <td>188840.0</td>
+                <td>42254172</td>
+                <td>59263038</td>
+                <td>153867318</td>
+                <td>30447516</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>44</th>
+                <td>2000-03-17 00:00:00+00:00</td>
+                <td>Final Destination</td>
+                <td>Original Screenplay</td>
+                <td>90089810</td>
+                <td>112036870</td>
+                <td>R</td>
+                <td>98.0</td>
+                <td>36.0</td>
+                <td>6.7</td>
+                <td>3.0</td>
+                <td>848927.0</td>
+                <td>38873840</td>
+                <td>99271205</td>
+                <td>189361015</td>
+                <td>16928411</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>45</th>
+                <td>2000-12-19 00:00:00+00:00</td>
+                <td>Finding Forrester</td>
+                <td>Original Screenplay</td>
+                <td>83751154</td>
+                <td>80013623</td>
+                <td>PG-13</td>
+                <td>136.0</td>
+                <td>62.0</td>
+                <td>7.3</td>
+                <td>13.0</td>
+                <td>47041.0</td>
+                <td>69565296</td>
+                <td>45694693</td>
+                <td>129445847</td>
+                <td>1134411</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>46</th>
+                <td>2000-03-31 00:00:00+00:00</td>
+                <td>The Road to El Dorado</td>
+                <td>Original Screenplay</td>
+                <td>85864975</td>
+                <td>65700000</td>
+                <td>PG</td>
+                <td>89.0</td>
+                <td>51.0</td>
+                <td>6.9</td>
+                <td>12.0</td>
+                <td>1332099.0</td>
+                <td>160565853</td>
+                <td>25178988</td>
+                <td>111043963</td>
+                <td>21712985</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>47</th>
+                <td>2000-11-10 00:00:00+00:00</td>
+                <td>Men of Honor</td>
+                <td>Based on Real Life Events</td>
+                <td>82400333</td>
+                <td>82339483</td>
+                <td>R</td>
+                <td>129.0</td>
+                <td>56.0</td>
+                <td>7.2</td>
+                <td>11.0</td>
+                <td>200807.0</td>
+                <td>54016502</td>
+                <td>56590007</td>
+                <td>138990340</td>
+                <td>22517226</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>48</th>
+                <td>2000-02-11 00:00:00+00:00</td>
+                <td>The Tigger Movie</td>
+                <td>Spin-Off</td>
+                <td>76974289</td>
+                <td>96147688</td>
+                <td>G</td>
+                <td>77.0</td>
+                <td>53.0</td>
+                <td>6.3</td>
+                <td>4.0</td>
+                <td>119446.0</td>
+                <td>33803336</td>
+                <td>85531343</td>
+                <td>162505632</td>
+                <td>15934101</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>49</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>O Brother, Where Art Thou?</td>
+                <td>Based on Folk Tale/Legend/Fairytale</td>
+                <td>73400882</td>
+                <td>75763814</td>
+                <td>PG-13</td>
+                <td>107.0</td>
+                <td>69.0</td>
+                <td>7.7</td>
+                <td>36.0</td>
+                <td>16017.0</td>
+                <td>41937260</td>
+                <td>48803994</td>
+                <td>122204876</td>
+                <td>314697</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>50</th>
+                <td>2000-04-28 00:00:00+00:00</td>
+                <td>Frequency</td>
+                <td>Original Screenplay</td>
+                <td>76029965</td>
+                <td>68079671</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>67.0</td>
+                <td>7.3</td>
+                <td>7.0</td>
+                <td>331161.0</td>
+                <td>52395172</td>
+                <td>39036037</td>
+                <td>115066002</td>
+                <td>15254742</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>51</th>
+                <td>2000-08-11 00:00:00+00:00</td>
+                <td>The Replacements</td>
+                <td>Original Screenplay</td>
+                <td>75613091</td>
+                <td>50054511</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>30.0</td>
+                <td>6.6</td>
+                <td>NaN</td>
+                <td>8857.0</td>
+                <td>84508339</td>
+                <td>8987380</td>
+                <td>84600471</td>
+                <td>18658112</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>52</th>
+                <td>2000-07-21 00:00:00+00:00</td>
+                <td>Pokemon 2000</td>
+                <td>Based on TV</td>
+                <td>73939602</td>
+                <td>133946923</td>
+                <td>NaN</td>
+                <td>30.0</td>
+                <td>NaN</td>
+                <td>8.1</td>
+                <td>NaN</td>
+                <td>189719.0</td>
+                <td>50705007</td>
+                <td>152453055</td>
+                <td>226392657</td>
+                <td>33086045</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>53</th>
+                <td>2000-02-11 00:00:00+00:00</td>
+                <td>The Beach</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>67232474</td>
+                <td>39778599</td>
+                <td>R</td>
+                <td>119.0</td>
+                <td>43.0</td>
+                <td>6.7</td>
+                <td>7.0</td>
+                <td>571311.0</td>
+                <td>84508348</td>
+                <td>0</td>
+                <td>67232474</td>
+                <td>25822237</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>54</th>
+                <td>2000-11-10 00:00:00+00:00</td>
+                <td>Little Nicky</td>
+                <td>Original Screenplay</td>
+                <td>66617112</td>
+                <td>58270391</td>
+                <td>PG-13</td>
+                <td>90.0</td>
+                <td>38.0</td>
+                <td>5.3</td>
+                <td>12.0</td>
+                <td>529383.0</td>
+                <td>135116152</td>
+                <td>31798775</td>
+                <td>98415887</td>
+                <td>27131161</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>55</th>
+                <td>2000-02-18 00:00:00+00:00</td>
+                <td>Pitch Black</td>
+                <td>Original Screenplay</td>
+                <td>66313849</td>
+                <td>53182088</td>
+                <td>R</td>
+                <td>109.0</td>
+                <td>49.0</td>
+                <td>7.1</td>
+                <td>4.0</td>
+                <td>171867.0</td>
+                <td>38873839</td>
+                <td>23572758</td>
+                <td>89886607</td>
+                <td>23688942</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>56</th>
+                <td>2000-10-20 00:00:00+00:00</td>
+                <td>Bedazzled</td>
+                <td>Remake</td>
+                <td>63994425</td>
+                <td>90376224</td>
+                <td>PG-13</td>
+                <td>93.0</td>
+                <td>49.0</td>
+                <td>6.0</td>
+                <td>3.0</td>
+                <td>889812.0</td>
+                <td>81091149</td>
+                <td>88687071</td>
+                <td>152681496</td>
+                <td>22142151</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>57</th>
+                <td>2000-08-11 00:00:00+00:00</td>
+                <td>Autumn in New York</td>
+                <td>Original Screenplay</td>
+                <td>63808754</td>
+                <td>90717684</td>
+                <td>PG-13</td>
+                <td>103.0</td>
+                <td>24.0</td>
+                <td>5.7</td>
+                <td>3.0</td>
+                <td>186946.0</td>
+                <td>67606675</td>
+                <td>89519271</td>
+                <td>153328025</td>
+                <td>18569873</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>58</th>
+                <td>2000-04-14 00:00:00+00:00</td>
+                <td>Keeping the Faith</td>
+                <td>Original Screenplay</td>
+                <td>62597698</td>
+                <td>45336404</td>
+                <td>PG-13</td>
+                <td>128.0</td>
+                <td>60.0</td>
+                <td>6.3</td>
+                <td>6.0</td>
+                <td>22324.0</td>
+                <td>49014835</td>
+                <td>14028383</td>
+                <td>76626081</td>
+                <td>13654300</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>59</th>
+                <td>2000-04-14 00:00:00+00:00</td>
+                <td>28 Days</td>
+                <td>Original Screenplay</td>
+                <td>62596204</td>
+                <td>62063972</td>
+                <td>PG-13</td>
+                <td>103.0</td>
+                <td>46.0</td>
+                <td>6.0</td>
+                <td>NaN</td>
+                <td>220262.0</td>
+                <td>72677179</td>
+                <td>42302271</td>
+                <td>104898475</td>
+                <td>17426757</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>60</th>
+                <td>2000-11-17 00:00:00+00:00</td>
+                <td>Bounce</td>
+                <td>Original Screenplay</td>
+                <td>62196603</td>
+                <td>53425292</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>52.0</td>
+                <td>5.7</td>
+                <td>2.0</td>
+                <td>208033.0</td>
+                <td>59145878</td>
+                <td>28085849</td>
+                <td>90282452</td>
+                <td>19304734</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>61</th>
+                <td>2000-02-18 00:00:00+00:00</td>
+                <td>Hanging Up</td>
+                <td>Original Screenplay</td>
+                <td>60910079</td>
+                <td>51867723</td>
+                <td>PG-13</td>
+                <td>94.0</td>
+                <td>33.0</td>
+                <td>4.9</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>67606673</td>
+                <td>26755026</td>
+                <td>87665105</td>
+                <td>26553215</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>62</th>
+                <td>2000-04-28 00:00:00+00:00</td>
+                <td>The Flintstones in Viva Rock Vegas</td>
+                <td>Based on TV</td>
+                <td>59546886</td>
+                <td>59431365</td>
+                <td>PG</td>
+                <td>90.0</td>
+                <td>27.0</td>
+                <td>3.6</td>
+                <td>9.0</td>
+                <td>300834.0</td>
+                <td>98029678</td>
+                <td>40902038</td>
+                <td>100448924</td>
+                <td>17777910</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>63</th>
+                <td>2000-03-31 00:00:00+00:00</td>
+                <td>The Skulls</td>
+                <td>Original Screenplay</td>
+                <td>59167974</td>
+                <td>35007180</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>24.0</td>
+                <td>5.6</td>
+                <td>NaN</td>
+                <td>431489.0</td>
+                <td>25352502</td>
+                <td>0</td>
+                <td>59167974</td>
+                <td>18650796</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>64</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>Thirteen Days</td>
+                <td>Based on Real Life Events</td>
+                <td>55663722</td>
+                <td>66554547</td>
+                <td>PG-13</td>
+                <td>145.0</td>
+                <td>67.0</td>
+                <td>7.3</td>
+                <td>7.0</td>
+                <td>216157.0</td>
+                <td>128826061</td>
+                <td>51510780</td>
+                <td>107174502</td>
+                <td>75150</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>65</th>
+                <td>2000-11-17 00:00:00+00:00</td>
+                <td>The 6th Day</td>
+                <td>Original Screenplay</td>
+                <td>58366385</td>
+                <td>96024898</td>
+                <td>PG-13</td>
+                <td>123.0</td>
+                <td>49.0</td>
+                <td>5.9</td>
+                <td>8.0</td>
+                <td>231886.0</td>
+                <td>138550399</td>
+                <td>103881029</td>
+                <td>162247414</td>
+                <td>22000591</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>66</th>
+                <td>2000-04-28 00:00:00+00:00</td>
+                <td>Where the Heart Is</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>57078915</td>
+                <td>40862054</td>
+                <td>PG-13</td>
+                <td>120.0</td>
+                <td>30.0</td>
+                <td>6.8</td>
+                <td>2.0</td>
+                <td>1771212.0</td>
+                <td>25352501</td>
+                <td>11984769</td>
+                <td>69063684</td>
+                <td>14016449</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>67</th>
+                <td>2000-10-20 00:00:00+00:00</td>
+                <td>Pay it Forward</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>56591894</td>
+                <td>55696705</td>
+                <td>PG-13</td>
+                <td>123.0</td>
+                <td>40.0</td>
+                <td>7.2</td>
+                <td>4.0</td>
+                <td>1275186.0</td>
+                <td>67554419</td>
+                <td>37472069</td>
+                <td>94063963</td>
+                <td>16266021</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>68</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>Dracula 2000</td>
+                <td>Original Screenplay</td>
+                <td>54854508</td>
+                <td>33000377</td>
+                <td>R</td>
+                <td>99.0</td>
+                <td>26.0</td>
+                <td>4.8</td>
+                <td>NaN</td>
+                <td>126589.0</td>
+                <td>46542687</td>
+                <td>0</td>
+                <td>54854508</td>
+                <td>14356037</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>69</th>
+                <td>2000-04-07 00:00:00+00:00</td>
+                <td>Return to Me</td>
+                <td>Original Screenplay</td>
+                <td>55204732</td>
+                <td>32662299</td>
+                <td>PG</td>
+                <td>115.0</td>
+                <td>54.0</td>
+                <td>6.9</td>
+                <td>2.0</td>
+                <td>205843.0</td>
+                <td>40564002</td>
+                <td>0</td>
+                <td>55204732</td>
+                <td>13218517</td>
+                <td>Romance</td>
+              </tr>
+              <tr>
+                <th>70</th>
+                <td>2000-12-08 00:00:00+00:00</td>
+                <td>Proof of Life</td>
+                <td>Based on Factual Book/Article</td>
+                <td>54811773</td>
+                <td>62761005</td>
+                <td>R</td>
+                <td>135.0</td>
+                <td>45.0</td>
+                <td>6.2</td>
+                <td>5.0</td>
+                <td>121668.0</td>
+                <td>109290861</td>
+                <td>50714446</td>
+                <td>105526219</td>
+                <td>17163489</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>71</th>
+                <td>2000-09-15 00:00:00+00:00</td>
+                <td>Almost Famous</td>
+                <td>Original Screenplay</td>
+                <td>54921165</td>
+                <td>47371191</td>
+                <td>R</td>
+                <td>122.0</td>
+                <td>90.0</td>
+                <td>7.9</td>
+                <td>103.0</td>
+                <td>899690.0</td>
+                <td>101323234</td>
+                <td>25075539</td>
+                <td>79996704</td>
+                <td>3908790</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>72</th>
+                <td>2000-11-03 00:00:00+00:00</td>
+                <td>The Legend of Bagger Vance</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>51880056</td>
+                <td>39235486</td>
+                <td>PG-13</td>
+                <td>126.0</td>
+                <td>47.0</td>
+                <td>6.7</td>
+                <td>11.0</td>
+                <td>321234.0</td>
+                <td>101410012</td>
+                <td>14434462</td>
+                <td>66314518</td>
+                <td>19465165</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>73</th>
+                <td>2000-08-25 00:00:00+00:00</td>
+                <td>The Art of War</td>
+                <td>Original Screenplay</td>
+                <td>51041526</td>
+                <td>30199105</td>
+                <td>R</td>
+                <td>117.0</td>
+                <td>30.0</td>
+                <td>5.7</td>
+                <td>9.0</td>
+                <td>337770.0</td>
+                <td>67606673</td>
+                <td>0</td>
+                <td>51041526</td>
+                <td>17596315</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>74</th>
+                <td>2000-08-11 00:00:00+00:00</td>
+                <td>Bless the Child</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>49647259</td>
+                <td>40435694</td>
+                <td>R</td>
+                <td>107.0</td>
+                <td>17.0</td>
+                <td>5.1</td>
+                <td>6.0</td>
+                <td>111590.0</td>
+                <td>67606670</td>
+                <td>18695806</td>
+                <td>68343065</td>
+                <td>15910695</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>75</th>
+                <td>2000-09-08 00:00:00+00:00</td>
+                <td>The Watcher</td>
+                <td>Original Screenplay</td>
+                <td>48924608</td>
+                <td>47267829</td>
+                <td>R</td>
+                <td>97.0</td>
+                <td>22.0</td>
+                <td>5.3</td>
+                <td>NaN</td>
+                <td>180550.0</td>
+                <td>55775504</td>
+                <td>30965907</td>
+                <td>79890515</td>
+                <td>15316790</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>76</th>
+                <td>2000-04-21 00:00:00+00:00</td>
+                <td>Love and Basketball</td>
+                <td>Original Screenplay</td>
+                <td>46380076</td>
+                <td>27709625</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>1256024.0</td>
+                <td>25352503</td>
+                <td>453814</td>
+                <td>46833890</td>
+                <td>13756572</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>77</th>
+                <td>2000-03-31 00:00:00+00:00</td>
+                <td>High Fidelity</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>46102777</td>
+                <td>47881663</td>
+                <td>R</td>
+                <td>113.0</td>
+                <td>79.0</td>
+                <td>7.5</td>
+                <td>21.0</td>
+                <td>100640.0</td>
+                <td>33803339</td>
+                <td>34825227</td>
+                <td>80928004</td>
+                <td>10866264</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>78</th>
+                <td>2000-10-27 00:00:00+00:00</td>
+                <td>Book of Shadows: Blair Witch 2</td>
+                <td>Original Screenplay</td>
+                <td>44656427</td>
+                <td>47721314</td>
+                <td>R</td>
+                <td>90.0</td>
+                <td>15.0</td>
+                <td>3.9</td>
+                <td>8.0</td>
+                <td>224181.0</td>
+                <td>25352501</td>
+                <td>36000552</td>
+                <td>80656979</td>
+                <td>22350574</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>79</th>
+                <td>2000-06-30 00:00:00+00:00</td>
+                <td>The Adventures of Rocky &amp; Bullwinkle</td>
+                <td>Based on TV</td>
+                <td>43945365</td>
+                <td>35129610</td>
+                <td>PG</td>
+                <td>92.0</td>
+                <td>36.0</td>
+                <td>4.1</td>
+                <td>6.0</td>
+                <td>NaN</td>
+                <td>128452668</td>
+                <td>15429531</td>
+                <td>59374896</td>
+                <td>11517252</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>80</th>
+                <td>2000-09-08 00:00:00+00:00</td>
+                <td>Nurse Betty</td>
+                <td>Original Screenplay</td>
+                <td>42541586</td>
+                <td>27732366</td>
+                <td>R</td>
+                <td>110.0</td>
+                <td>69.0</td>
+                <td>6.1</td>
+                <td>14.0</td>
+                <td>10902.0</td>
+                <td>40563999</td>
+                <td>4330734</td>
+                <td>46872320</td>
+                <td>12077846</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>81</th>
+                <td>2000-02-25 00:00:00+00:00</td>
+                <td>Reindeer Games</td>
+                <td>Original Screenplay</td>
+                <td>39483615</td>
+                <td>23360779</td>
+                <td>R</td>
+                <td>104.0</td>
+                <td>37.0</td>
+                <td>5.8</td>
+                <td>3.0</td>
+                <td>126748.0</td>
+                <td>60846007</td>
+                <td>0</td>
+                <td>39483615</td>
+                <td>13738278</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>82</th>
+                <td>2000-06-16 00:00:00+00:00</td>
+                <td>Titan A.E.</td>
+                <td>Original Screenplay</td>
+                <td>38454640</td>
+                <td>36751979</td>
+                <td>PG</td>
+                <td>94.0</td>
+                <td>48.0</td>
+                <td>6.6</td>
+                <td>6.0</td>
+                <td>13669.0</td>
+                <td>126762511</td>
+                <td>23662335</td>
+                <td>62116975</td>
+                <td>15848432</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>83</th>
+                <td>2000-06-16 00:00:00+00:00</td>
+                <td>Boys and Girls</td>
+                <td>Original Screenplay</td>
+                <td>36845049</td>
+                <td>21799652</td>
+                <td>PG-13</td>
+                <td>94.0</td>
+                <td>29.0</td>
+                <td>5.4</td>
+                <td>NaN</td>
+                <td>808623.0</td>
+                <td>27042669</td>
+                <td>0</td>
+                <td>36845049</td>
+                <td>11846294</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>84</th>
+                <td>2000-05-12 00:00:00+00:00</td>
+                <td>Battlefield Earth</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>36290733</td>
+                <td>29725663</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>9.0</td>
+                <td>2.5</td>
+                <td>3.0</td>
+                <td>20840.0</td>
+                <td>135213358</td>
+                <td>13950601</td>
+                <td>50241334</td>
+                <td>19519566</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>85</th>
+                <td>2000-09-22 00:00:00+00:00</td>
+                <td>Urban Legends: Final Cut</td>
+                <td>Original Screenplay</td>
+                <td>36285868</td>
+                <td>38574362</td>
+                <td>R</td>
+                <td>97.0</td>
+                <td>16.0</td>
+                <td>4.3</td>
+                <td>NaN</td>
+                <td>16533.0</td>
+                <td>25352504</td>
+                <td>28911243</td>
+                <td>65197111</td>
+                <td>14375736</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>86</th>
+                <td>2000-02-23 00:00:00+00:00</td>
+                <td>Wonder Boys</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>32762985</td>
+                <td>33422485</td>
+                <td>R</td>
+                <td>107.0</td>
+                <td>73.0</td>
+                <td>7.3</td>
+                <td>46.0</td>
+                <td>566031.0</td>
+                <td>59140627</td>
+                <td>23712064</td>
+                <td>56475049</td>
+                <td>9815517</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>87</th>
+                <td>2000-03-10 00:00:00+00:00</td>
+                <td>The Ninth Gate</td>
+                <td>Original Screenplay</td>
+                <td>31527943</td>
+                <td>58394308</td>
+                <td>R</td>
+                <td>133.0</td>
+                <td>44.0</td>
+                <td>6.7</td>
+                <td>4.0</td>
+                <td>256428.0</td>
+                <td>64226340</td>
+                <td>67168180</td>
+                <td>98696123</td>
+                <td>11193160</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>88</th>
+                <td>2000-11-10 00:00:00+00:00</td>
+                <td>Red Planet</td>
+                <td>Original Screenplay</td>
+                <td>29528234</td>
+                <td>33463969</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>34.0</td>
+                <td>5.7</td>
+                <td>NaN</td>
+                <td>87341.0</td>
+                <td>135133778</td>
+                <td>26998173</td>
+                <td>56526407</td>
+                <td>14731771</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>89</th>
+                <td>2000-05-19 00:00:00+00:00</td>
+                <td>Small Time Crooks</td>
+                <td>Original Screenplay</td>
+                <td>29183029</td>
+                <td>29934477</td>
+                <td>PG</td>
+                <td>94.0</td>
+                <td>69.0</td>
+                <td>6.7</td>
+                <td>3.0</td>
+                <td>2174.0</td>
+                <td>30423004</td>
+                <td>21411234</td>
+                <td>50594263</td>
+                <td>6559069</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>90</th>
+                <td>2000-05-12 00:00:00+00:00</td>
+                <td>Center Stage</td>
+                <td>Original Screenplay</td>
+                <td>29072433</td>
+                <td>21361109</td>
+                <td>PG-13</td>
+                <td>115.0</td>
+                <td>52.0</td>
+                <td>6.7</td>
+                <td>NaN</td>
+                <td>244692.0</td>
+                <td>30423003</td>
+                <td>7031405</td>
+                <td>36103838</td>
+                <td>7782577</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>91</th>
+                <td>2000-10-13 00:00:00+00:00</td>
+                <td>Lost Souls</td>
+                <td>Original Screenplay</td>
+                <td>28360387</td>
+                <td>31320293</td>
+                <td>R</td>
+                <td>97.0</td>
+                <td>16.0</td>
+                <td>4.8</td>
+                <td>2.0</td>
+                <td>21158.0</td>
+                <td>47324675</td>
+                <td>24576138</td>
+                <td>52936525</td>
+                <td>13444882</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>92</th>
+                <td>2000-01-28 00:00:00+00:00</td>
+                <td>Eye of the Beholder</td>
+                <td>Original Screenplay</td>
+                <td>27889081</td>
+                <td>18260865</td>
+                <td>R</td>
+                <td>109.0</td>
+                <td>29.0</td>
+                <td>5.1</td>
+                <td>NaN</td>
+                <td>103473.0</td>
+                <td>25352502</td>
+                <td>2974827</td>
+                <td>30863908</td>
+                <td>10072459</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>93</th>
+                <td>2000-07-26 00:00:00+00:00</td>
+                <td>Thomas and the Magic Railroad</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>26892802</td>
+                <td>15911332</td>
+                <td>G</td>
+                <td>85.0</td>
+                <td>19.0</td>
+                <td>4.0</td>
+                <td>2.0</td>
+                <td>387863.0</td>
+                <td>32113165</td>
+                <td>0</td>
+                <td>26892802</td>
+                <td>7022527</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>94</th>
+                <td>2000-12-22 00:00:00+00:00</td>
+                <td>All the Pretty Horses</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>25607563</td>
+                <td>18120267</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>55.0</td>
+                <td>5.8</td>
+                <td>13.0</td>
+                <td>360613.0</td>
+                <td>74214662</td>
+                <td>4276647</td>
+                <td>29884210</td>
+                <td>0</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>95</th>
+                <td>2000-07-21 00:00:00+00:00</td>
+                <td>Loser</td>
+                <td>Original Screenplay</td>
+                <td>26136781</td>
+                <td>18250106</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>35.0</td>
+                <td>5.3</td>
+                <td>NaN</td>
+                <td>95492.0</td>
+                <td>33803332</td>
+                <td>4708939</td>
+                <td>30845720</td>
+                <td>10155553</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>96</th>
+                <td>2000-03-03 00:00:00+00:00</td>
+                <td>Drowning Mona</td>
+                <td>Original Screenplay</td>
+                <td>26074524</td>
+                <td>15980376</td>
+                <td>PG-13</td>
+                <td>96.0</td>
+                <td>25.0</td>
+                <td>5.7</td>
+                <td>NaN</td>
+                <td>57760.0</td>
+                <td>27042664</td>
+                <td>934973</td>
+                <td>27009497</td>
+                <td>9806733</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>97</th>
+                <td>2000-09-15 00:00:00+00:00</td>
+                <td>Bait</td>
+                <td>Original Screenplay</td>
+                <td>25902017</td>
+                <td>15471969</td>
+                <td>R</td>
+                <td>93.0</td>
+                <td>NaN</td>
+                <td>5.2</td>
+                <td>NaN</td>
+                <td>171662.0</td>
+                <td>59155829</td>
+                <td>248187</td>
+                <td>26150204</td>
+                <td>9271562</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>98</th>
+                <td>2000-12-08 00:00:00+00:00</td>
+                <td>Dungeons and Dragons</td>
+                <td>Based on Game</td>
+                <td>25590236</td>
+                <td>33771965</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>6.9</td>
+                <td>NaN</td>
+                <td>345658.0</td>
+                <td>58982156</td>
+                <td>31322430</td>
+                <td>56912666</td>
+                <td>12196535</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>99</th>
+                <td>2000-03-03 00:00:00+00:00</td>
+                <td>The Next Best Thing</td>
+                <td>Original Screenplay</td>
+                <td>25324734</td>
+                <td>24355762</td>
+                <td>PG-13</td>
+                <td>108.0</td>
+                <td>25.0</td>
+                <td>4.6</td>
+                <td>10.0</td>
+                <td>156324.0</td>
+                <td>42254166</td>
+                <td>15840563</td>
+                <td>41165297</td>
+                <td>9921932</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>100</th>
+                <td>2001-11-16 00:00:00+00:00</td>
+                <td>Harry Potter and the Sorcerer’s Stone</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>510437208</td>
+                <td>975047606</td>
+                <td>PG</td>
+                <td>152.0</td>
+                <td>64.0</td>
+                <td>7.6</td>
+                <td>65.0</td>
+                <td>15295.0</td>
+                <td>200724687</td>
+                <td>1055291803</td>
+                <td>1565729011</td>
+                <td>144994876</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>101</th>
+                <td>2001-12-19 00:00:00+00:00</td>
+                <td>The Lord of the Rings: The Fellowship of the Ring</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>502999394</td>
+                <td>887210985</td>
+                <td>PG-13</td>
+                <td>178.0</td>
+                <td>92.0</td>
+                <td>8.8</td>
+                <td>124.0</td>
+                <td>3267439.0</td>
+                <td>173753275</td>
+                <td>911274137</td>
+                <td>1414273531</td>
+                <td>75258266</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>102</th>
+                <td>2001-11-02 00:00:00+00:00</td>
+                <td>Monsters, Inc.</td>
+                <td>Original Screenplay</td>
+                <td>449635428</td>
+                <td>559757719</td>
+                <td>G</td>
+                <td>92.0</td>
+                <td>79.0</td>
+                <td>8.0</td>
+                <td>38.0</td>
+                <td>NaN</td>
+                <td>178658912</td>
+                <td>419979398</td>
+                <td>869614826</td>
+                <td>97216962</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>103</th>
+                <td>2001-05-18 00:00:00+00:00</td>
+                <td>Shrek</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>430801615</td>
+                <td>491812794</td>
+                <td>PG</td>
+                <td>90.0</td>
+                <td>84.0</td>
+                <td>7.8</td>
+                <td>60.0</td>
+                <td>4328715.0</td>
+                <td>80477031</td>
+                <td>360791059</td>
+                <td>791592674</td>
+                <td>68160440</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>104</th>
+                <td>2001-08-03 00:00:00+00:00</td>
+                <td>Rush Hour 2</td>
+                <td>Original Screenplay</td>
+                <td>364020605</td>
+                <td>347425832</td>
+                <td>PG-13</td>
+                <td>90.0</td>
+                <td>48.0</td>
+                <td>6.6</td>
+                <td>22.0</td>
+                <td>801126.0</td>
+                <td>144858655</td>
+                <td>195175383</td>
+                <td>559195988</td>
+                <td>108496271</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>105</th>
+                <td>2001-05-04 00:00:00+00:00</td>
+                <td>The Mummy Returns</td>
+                <td>Remake</td>
+                <td>325139498</td>
+                <td>435040395</td>
+                <td>PG-13</td>
+                <td>130.0</td>
+                <td>48.0</td>
+                <td>6.3</td>
+                <td>16.0</td>
+                <td>219337.0</td>
+                <td>157734978</td>
+                <td>375075680</td>
+                <td>700215178</td>
+                <td>109672543</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>106</th>
+                <td>2001-05-25 00:00:00+00:00</td>
+                <td>Pearl Harbor</td>
+                <td>Based on Real Life Events</td>
+                <td>319557956</td>
+                <td>449239855</td>
+                <td>PG-13</td>
+                <td>183.0</td>
+                <td>44.0</td>
+                <td>6.2</td>
+                <td>51.0</td>
+                <td>1960468.0</td>
+                <td>243845399</td>
+                <td>403511826</td>
+                <td>723069782</td>
+                <td>95089907</td>
+                <td>History</td>
+              </tr>
+              <tr>
+                <th>107</th>
+                <td>2001-12-07 00:00:00+00:00</td>
+                <td>Ocean's Eleven</td>
+                <td>Remake</td>
+                <td>293910473</td>
+                <td>450728529</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>74.0</td>
+                <td>7.8</td>
+                <td>20.0</td>
+                <td>804495.0</td>
+                <td>136205312</td>
+                <td>428343880</td>
+                <td>722254353</td>
+                <td>61064562</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>108</th>
+                <td>2001-07-18 00:00:00+00:00</td>
+                <td>Jurassic Park III</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>291594219</td>
+                <td>365900000</td>
+                <td>PG-13</td>
+                <td>92.0</td>
+                <td>42.0</td>
+                <td>5.9</td>
+                <td>15.0</td>
+                <td>1481790.0</td>
+                <td>149687276</td>
+                <td>297336689</td>
+                <td>588930908</td>
+                <td>81719024</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>109</th>
+                <td>2001-07-27 00:00:00+00:00</td>
+                <td>Planet of the Apes</td>
+                <td>Remake</td>
+                <td>289729129</td>
+                <td>362211740</td>
+                <td>PG-13</td>
+                <td>119.0</td>
+                <td>50.0</td>
+                <td>5.7</td>
+                <td>27.0</td>
+                <td>96551.0</td>
+                <td>160950129</td>
+                <td>293251136</td>
+                <td>582980265</td>
+                <td>110303888</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>110</th>
+                <td>2001-12-21 00:00:00+00:00</td>
+                <td>A Beautiful Mind</td>
+                <td>Based on Factual Book/Article</td>
+                <td>269239236</td>
+                <td>317668058</td>
+                <td>PG-13</td>
+                <td>135.0</td>
+                <td>72.0</td>
+                <td>8.2</td>
+                <td>68.0</td>
+                <td>1274904.0</td>
+                <td>123020232</td>
+                <td>231781256</td>
+                <td>501020492</td>
+                <td>579064</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>111</th>
+                <td>2001-02-09 00:00:00+00:00</td>
+                <td>Hannibal</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>265722703</td>
+                <td>350100280</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>57.0</td>
+                <td>6.8</td>
+                <td>16.0</td>
+                <td>1764829.0</td>
+                <td>140030031</td>
+                <td>297777907</td>
+                <td>563500610</td>
+                <td>93358377</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>112</th>
+                <td>2001-08-10 00:00:00+00:00</td>
+                <td>American Pie 2</td>
+                <td>Original Screenplay</td>
+                <td>233539223</td>
+                <td>286500000</td>
+                <td>R</td>
+                <td>108.0</td>
+                <td>43.0</td>
+                <td>6.4</td>
+                <td>6.0</td>
+                <td>2175843.0</td>
+                <td>48286218</td>
+                <td>227594159</td>
+                <td>461133382</td>
+                <td>72619228</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>113</th>
+                <td>2001-06-22 00:00:00+00:00</td>
+                <td>The Fast and the Furious</td>
+                <td>Based on Factual Book/Article</td>
+                <td>232598433</td>
+                <td>206512310</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>58.0</td>
+                <td>6.8</td>
+                <td>12.0</td>
+                <td>2373078.0</td>
+                <td>61162543</td>
+                <td>99791518</td>
+                <td>332389951</td>
+                <td>64524898</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>114</th>
+                <td>2001-06-15 00:00:00+00:00</td>
+                <td>Lara Croft: Tomb Raider</td>
+                <td>Based on Game</td>
+                <td>211081889</td>
+                <td>273330185</td>
+                <td>PG-13</td>
+                <td>100.0</td>
+                <td>33.0</td>
+                <td>5.8</td>
+                <td>17.0</td>
+                <td>2291866.0</td>
+                <td>151296817</td>
+                <td>228854145</td>
+                <td>439936034</td>
+                <td>76832617</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>115</th>
+                <td>2001-06-22 00:00:00+00:00</td>
+                <td>Dr. Dolittle 2</td>
+                <td>Remake</td>
+                <td>181798768</td>
+                <td>176101721</td>
+                <td>PG</td>
+                <td>87.0</td>
+                <td>49.0</td>
+                <td>4.7</td>
+                <td>6.0</td>
+                <td>43069.0</td>
+                <td>115886921</td>
+                <td>101644096</td>
+                <td>283442864</td>
+                <td>40298130</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>116</th>
+                <td>2001-03-30 00:00:00+00:00</td>
+                <td>Spy Kids</td>
+                <td>Original Screenplay</td>
+                <td>181382450</td>
+                <td>197692062</td>
+                <td>PG</td>
+                <td>88.0</td>
+                <td>71.0</td>
+                <td>5.4</td>
+                <td>10.0</td>
+                <td>576589.0</td>
+                <td>56333921</td>
+                <td>136810951</td>
+                <td>318193401</td>
+                <td>42728282</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>117</th>
+                <td>2001-12-28 00:00:00+00:00</td>
+                <td>Black Hawk Down</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>170367276</td>
+                <td>159691085</td>
+                <td>R</td>
+                <td>144.0</td>
+                <td>74.0</td>
+                <td>7.7</td>
+                <td>37.0</td>
+                <td>465980.0</td>
+                <td>148978996</td>
+                <td>80060277</td>
+                <td>250427553</td>
+                <td>281998</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>118</th>
+                <td>2001-08-03 00:00:00+00:00</td>
+                <td>The Princess Diaries</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>174223539</td>
+                <td>165334774</td>
+                <td>G</td>
+                <td>111.0</td>
+                <td>52.0</td>
+                <td>6.3</td>
+                <td>11.0</td>
+                <td>2839621.0</td>
+                <td>48285990</td>
+                <td>91888240</td>
+                <td>266111779</td>
+                <td>36797577</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>119</th>
+                <td>2001-12-14 00:00:00+00:00</td>
+                <td>Vanilla Sky</td>
+                <td>Remake</td>
+                <td>161131941</td>
+                <td>202726605</td>
+                <td>R</td>
+                <td>136.0</td>
+                <td>45.0</td>
+                <td>6.9</td>
+                <td>33.0</td>
+                <td>249337.0</td>
+                <td>112103083</td>
+                <td>163529167</td>
+                <td>324661108</td>
+                <td>40061667</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>120</th>
+                <td>2001-08-10 00:00:00+00:00</td>
+                <td>The Others</td>
+                <td>Original Screenplay</td>
+                <td>155357185</td>
+                <td>207765056</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>74.0</td>
+                <td>7.6</td>
+                <td>51.0</td>
+                <td>1183953.0</td>
+                <td>27362190</td>
+                <td>179049111</td>
+                <td>334406296</td>
+                <td>22678350</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>121</th>
+                <td>2001-07-13 00:00:00+00:00</td>
+                <td>Legally Blonde</td>
+                <td>Original Screenplay</td>
+                <td>155310086</td>
+                <td>141809235</td>
+                <td>PG-13</td>
+                <td>96.0</td>
+                <td>59.0</td>
+                <td>6.3</td>
+                <td>10.0</td>
+                <td>685904.0</td>
+                <td>28971730</td>
+                <td>72937634</td>
+                <td>228247720</td>
+                <td>32798294</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>122</th>
+                <td>2001-07-20 00:00:00+00:00</td>
+                <td>America's Sweethearts</td>
+                <td>Original Screenplay</td>
+                <td>150665352</td>
+                <td>160648493</td>
+                <td>PG-13</td>
+                <td>102.0</td>
+                <td>44.0</td>
+                <td>5.7</td>
+                <td>2.0</td>
+                <td>767564.0</td>
+                <td>74038868</td>
+                <td>107904922</td>
+                <td>258570274</td>
+                <td>48578957</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>123</th>
+                <td>2001-07-04 00:00:00+00:00</td>
+                <td>Cats &amp; Dogs</td>
+                <td>Original Screenplay</td>
+                <td>150291095</td>
+                <td>200700000</td>
+                <td>PG</td>
+                <td>110.0</td>
+                <td>32.0</td>
+                <td>2.8</td>
+                <td>10.0</td>
+                <td>16584169.0</td>
+                <td>96572434</td>
+                <td>172743700</td>
+                <td>323034795</td>
+                <td>34939290</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>124</th>
+                <td>2001-06-08 00:00:00+00:00</td>
+                <td>Atlantis: The Lost Empire</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>135286333</td>
+                <td>186049020</td>
+                <td>PG</td>
+                <td>95.0</td>
+                <td>52.0</td>
+                <td>6.9</td>
+                <td>14.0</td>
+                <td>187547.0</td>
+                <td>144858654</td>
+                <td>164167118</td>
+                <td>299453451</td>
+                <td>529556</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>125</th>
+                <td>2001-12-21 00:00:00+00:00</td>
+                <td>Jimmy Neutron: Boy Genius</td>
+                <td>Based on TV</td>
+                <td>129497356</td>
+                <td>102992536</td>
+                <td>G</td>
+                <td>82.0</td>
+                <td>65.0</td>
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>23181.0</td>
+                <td>39999809</td>
+                <td>35289918</td>
+                <td>164787274</td>
+                <td>22132352</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>126</th>
+                <td>2001-06-29 00:00:00+00:00</td>
+                <td>A.I. Artificial Intelligence</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>126536752</td>
+                <td>235900000</td>
+                <td>PG-13</td>
+                <td>146.0</td>
+                <td>65.0</td>
+                <td>7.2</td>
+                <td>68.0</td>
+                <td>306801.0</td>
+                <td>144858653</td>
+                <td>253153873</td>
+                <td>379690625</td>
+                <td>47244249</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>127</th>
+                <td>2001-10-05 00:00:00+00:00</td>
+                <td>Training Day</td>
+                <td>Original Screenplay</td>
+                <td>122745234</td>
+                <td>104505362</td>
+                <td>R</td>
+                <td>122.0</td>
+                <td>69.0</td>
+                <td>7.7</td>
+                <td>23.0</td>
+                <td>2616668.0</td>
+                <td>72429327</td>
+                <td>45460389</td>
+                <td>168205623</td>
+                <td>36296408</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>128</th>
+                <td>2001-04-06 00:00:00+00:00</td>
+                <td>Along Came a Spider</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>119200478</td>
+                <td>105159085</td>
+                <td>R</td>
+                <td>104.0</td>
+                <td>42.0</td>
+                <td>6.4</td>
+                <td>NaN</td>
+                <td>222756.0</td>
+                <td>45067135</td>
+                <td>50057334</td>
+                <td>169257812</td>
+                <td>26899296</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>129</th>
+                <td>2001-04-13 00:00:00+00:00</td>
+                <td>Bridget Jones's Diary</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>115083050</td>
+                <td>281527158</td>
+                <td>R</td>
+                <td>97.0</td>
+                <td>66.0</td>
+                <td>6.7</td>
+                <td>29.0</td>
+                <td>1635052.0</td>
+                <td>40238515</td>
+                <td>338046349</td>
+                <td>453129399</td>
+                <td>17276701</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>130</th>
+                <td>2001-07-04 00:00:00+00:00</td>
+                <td>Scary Movie 2</td>
+                <td>Original Screenplay</td>
+                <td>114723897</td>
+                <td>141189101</td>
+                <td>R</td>
+                <td>83.0</td>
+                <td>29.0</td>
+                <td>5.3</td>
+                <td>4.0</td>
+                <td>366342.0</td>
+                <td>72429324</td>
+                <td>112525684</td>
+                <td>227249581</td>
+                <td>33000982</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>131</th>
+                <td>2001-07-13 00:00:00+00:00</td>
+                <td>The Score</td>
+                <td>Original Screenplay</td>
+                <td>114389861</td>
+                <td>113542091</td>
+                <td>R</td>
+                <td>124.0</td>
+                <td>71.0</td>
+                <td>6.8</td>
+                <td>NaN</td>
+                <td>284707.0</td>
+                <td>109448758</td>
+                <td>68360739</td>
+                <td>182750600</td>
+                <td>30611541</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>132</th>
+                <td>2001-11-09 00:00:00+00:00</td>
+                <td>Shallow Hal</td>
+                <td>Original Screenplay</td>
+                <td>113930015</td>
+                <td>70836296</td>
+                <td>PG-13</td>
+                <td>114.0</td>
+                <td>48.0</td>
+                <td>5.9</td>
+                <td>3.0</td>
+                <td>196509.0</td>
+                <td>64334258</td>
+                <td>0</td>
+                <td>113930015</td>
+                <td>36217445</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>133</th>
+                <td>2001-06-08 00:00:00+00:00</td>
+                <td>Swordfish</td>
+                <td>Original Screenplay</td>
+                <td>112302423</td>
+                <td>147080413</td>
+                <td>R</td>
+                <td>99.0</td>
+                <td>32.0</td>
+                <td>6.5</td>
+                <td>8.0</td>
+                <td>819317.0</td>
+                <td>128763244</td>
+                <td>124429466</td>
+                <td>236731889</td>
+                <td>29206130</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>134</th>
+                <td>2001-03-02 00:00:00+00:00</td>
+                <td>The Mexican</td>
+                <td>Original Screenplay</td>
+                <td>107531179</td>
+                <td>145238250</td>
+                <td>R</td>
+                <td>123.0</td>
+                <td>43.0</td>
+                <td>6.1</td>
+                <td>NaN</td>
+                <td>276677.0</td>
+                <td>64381624</td>
+                <td>126235682</td>
+                <td>233766861</td>
+                <td>32365976</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>135</th>
+                <td>2001-02-16 00:00:00+00:00</td>
+                <td>Down to Earth</td>
+                <td>Remake</td>
+                <td>103287841</td>
+                <td>71172251</td>
+                <td>PG-13</td>
+                <td>87.0</td>
+                <td>32.0</td>
+                <td>5.5</td>
+                <td>3.0</td>
+                <td>98600.0</td>
+                <td>48286216</td>
+                <td>11266783</td>
+                <td>114554624</td>
+                <td>32234766</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>136</th>
+                <td>2001-11-21 00:00:00+00:00</td>
+                <td>Spy Game</td>
+                <td>Original Screenplay</td>
+                <td>100337294</td>
+                <td>143049560</td>
+                <td>R</td>
+                <td>126.0</td>
+                <td>63.0</td>
+                <td>7.1</td>
+                <td>3.0</td>
+                <td>537750.0</td>
+                <td>144804133</td>
+                <td>129820123</td>
+                <td>230157417</td>
+                <td>34896388</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>137</th>
+                <td>2001-01-26 00:00:00+00:00</td>
+                <td>The Wedding Planner</td>
+                <td>Original Screenplay</td>
+                <td>97217629</td>
+                <td>94728529</td>
+                <td>PG-13</td>
+                <td>103.0</td>
+                <td>33.0</td>
+                <td>5.3</td>
+                <td>6.0</td>
+                <td>303995.0</td>
+                <td>45067136</td>
+                <td>55251782</td>
+                <td>152469411</td>
+                <td>21745364</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>138</th>
+                <td>2001-11-30 00:00:00+00:00</td>
+                <td>Behind Enemy Lines</td>
+                <td>Original Screenplay</td>
+                <td>94516751</td>
+                <td>58855732</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>49.0</td>
+                <td>6.4</td>
+                <td>2.0</td>
+                <td>263614.0</td>
+                <td>64236224</td>
+                <td>0</td>
+                <td>94516751</td>
+                <td>30088461</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>139</th>
+                <td>2001-12-25 00:00:00+00:00</td>
+                <td>Ali</td>
+                <td>Based on Real Life Events</td>
+                <td>93287247</td>
+                <td>87683966</td>
+                <td>R</td>
+                <td>157.0</td>
+                <td>65.0</td>
+                <td>6.8</td>
+                <td>25.0</td>
+                <td>235084.0</td>
+                <td>174761375</td>
+                <td>47297803</td>
+                <td>140585050</td>
+                <td>23586199</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>140</th>
+                <td>2001-05-18 00:00:00+00:00</td>
+                <td>Moulin Rouge</td>
+                <td>Original Screenplay</td>
+                <td>92352352</td>
+                <td>179200588</td>
+                <td>Not Rated</td>
+                <td>119.0</td>
+                <td>NaN</td>
+                <td>7.1</td>
+                <td>10.0</td>
+                <td>635476.0</td>
+                <td>85293332</td>
+                <td>196036616</td>
+                <td>288388968</td>
+                <td>269623</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>141</th>
+                <td>2001-08-17 00:00:00+00:00</td>
+                <td>Rat Race</td>
+                <td>Original Screenplay</td>
+                <td>91111624</td>
+                <td>86607223</td>
+                <td>PG-13</td>
+                <td>112.0</td>
+                <td>52.0</td>
+                <td>6.4</td>
+                <td>3.0</td>
+                <td>188220.0</td>
+                <td>77257949</td>
+                <td>48286218</td>
+                <td>139397842</td>
+                <td>18770613</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>142</th>
+                <td>2001-05-11 00:00:00+00:00</td>
+                <td>A Knight’s Tale</td>
+                <td>Original Screenplay</td>
+                <td>90269414</td>
+                <td>100622586</td>
+                <td>PG-13</td>
+                <td>132.0</td>
+                <td>56.0</td>
+                <td>6.9</td>
+                <td>10.0</td>
+                <td>1333679.0</td>
+                <td>65991160</td>
+                <td>71686712</td>
+                <td>161956126</td>
+                <td>26575752</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>143</th>
+                <td>2001-06-01 00:00:00+00:00</td>
+                <td>The Animal</td>
+                <td>Original Screenplay</td>
+                <td>89751565</td>
+                <td>55762229</td>
+                <td>PG-13</td>
+                <td>84.0</td>
+                <td>43.0</td>
+                <td>4.8</td>
+                <td>5.0</td>
+                <td>518625.0</td>
+                <td>35409890</td>
+                <td>0</td>
+                <td>89751565</td>
+                <td>31563925</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>144</th>
+                <td>2001-09-28 00:00:00+00:00</td>
+                <td>Don’t Say a Word</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>88518709</td>
+                <td>104488383</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>490737.0</td>
+                <td>80475246</td>
+                <td>79655859</td>
+                <td>168174568</td>
+                <td>27507202</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>145</th>
+                <td>2001-04-06 00:00:00+00:00</td>
+                <td>Blow</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>85290799</td>
+                <td>83282296</td>
+                <td>R</td>
+                <td>124.0</td>
+                <td>52.0</td>
+                <td>7.6</td>
+                <td>9.0</td>
+                <td>23723.0</td>
+                <td>48286215</td>
+                <td>48755430</td>
+                <td>134046229</td>
+                <td>20028254</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>146</th>
+                <td>2001-12-14 00:00:00+00:00</td>
+                <td>The Royal Tenenbaums</td>
+                <td>Original Screenplay</td>
+                <td>82949839</td>
+                <td>71430876</td>
+                <td>R</td>
+                <td>110.0</td>
+                <td>76.0</td>
+                <td>7.6</td>
+                <td>45.0</td>
+                <td>341405.0</td>
+                <td>44363594</td>
+                <td>30226248</td>
+                <td>113176087</td>
+                <td>438852</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>147</th>
+                <td>2001-03-16 00:00:00+00:00</td>
+                <td>Exit Wounds</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>83307561</td>
+                <td>79958599</td>
+                <td>R</td>
+                <td>101.0</td>
+                <td>39.0</td>
+                <td>5.6</td>
+                <td>4.0</td>
+                <td>99605.0</td>
+                <td>53114836</td>
+                <td>45389041</td>
+                <td>128696602</td>
+                <td>29753299</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>148</th>
+                <td>2001-03-16 00:00:00+00:00</td>
+                <td>Enemy at the Gates</td>
+                <td>Based on Real Life Events</td>
+                <td>82725204</td>
+                <td>96971293</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>53.0</td>
+                <td>7.6</td>
+                <td>4.0</td>
+                <td>546967.0</td>
+                <td>136810948</td>
+                <td>73354025</td>
+                <td>156079229</td>
+                <td>22228183</td>
+                <td>War</td>
+              </tr>
+              <tr>
+                <th>149</th>
+                <td>2001-08-13 00:00:00+00:00</td>
+                <td>K-PAX</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>80984256</td>
+                <td>50315140</td>
+                <td>PG-13</td>
+                <td>120.0</td>
+                <td>49.0</td>
+                <td>7.4</td>
+                <td>3.0</td>
+                <td>23427.0</td>
+                <td>77257944</td>
+                <td>0</td>
+                <td>80984256</td>
+                <td>27708682</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>150</th>
+                <td>2001-10-05 00:00:00+00:00</td>
+                <td>Serendipity</td>
+                <td>Original Screenplay</td>
+                <td>80887963</td>
+                <td>77477297</td>
+                <td>PG-13</td>
+                <td>90.0</td>
+                <td>52.0</td>
+                <td>6.9</td>
+                <td>3.0</td>
+                <td>2533909.0</td>
+                <td>45067137</td>
+                <td>43814893</td>
+                <td>124702856</td>
+                <td>21421764</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>151</th>
+                <td>2001-12-25 00:00:00+00:00</td>
+                <td>Kate &amp; Leopold</td>
+                <td>Original Screenplay</td>
+                <td>75116077</td>
+                <td>70937778</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>44.0</td>
+                <td>6.4</td>
+                <td>4.0</td>
+                <td>953105.0</td>
+                <td>76558806</td>
+                <td>38027915</td>
+                <td>113143992</td>
+                <td>15511784</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>152</th>
+                <td>2001-11-02 00:00:00+00:00</td>
+                <td>Domestic Disturbance</td>
+                <td>Original Screenplay</td>
+                <td>72745418</td>
+                <td>54207112</td>
+                <td>PG-13</td>
+                <td>89.0</td>
+                <td>29.0</td>
+                <td>5.6</td>
+                <td>3.0</td>
+                <td>129075.0</td>
+                <td>85285411</td>
+                <td>14482428</td>
+                <td>87227846</td>
+                <td>22581504</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>153</th>
+                <td>2001-09-28 00:00:00+00:00</td>
+                <td>Zoolander</td>
+                <td>Original Screenplay</td>
+                <td>72706163</td>
+                <td>60780981</td>
+                <td>PG-13</td>
+                <td>90.0</td>
+                <td>61.0</td>
+                <td>6.5</td>
+                <td>11.0</td>
+                <td>22001218.0</td>
+                <td>45066884</td>
+                <td>25122745</td>
+                <td>97828908</td>
+                <td>24988047</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>154</th>
+                <td>2001-11-02 00:00:00+00:00</td>
+                <td>The One</td>
+                <td>Original Screenplay</td>
+                <td>70668074</td>
+                <td>72689126</td>
+                <td>PG-13</td>
+                <td>87.0</td>
+                <td>25.0</td>
+                <td>5.9</td>
+                <td>4.0</td>
+                <td>21557.0</td>
+                <td>78867481</td>
+                <td>46328014</td>
+                <td>116996088</td>
+                <td>30762187</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>155</th>
+                <td>2001-10-26 00:00:00+00:00</td>
+                <td>Thirteen Ghosts</td>
+                <td>Original Screenplay</td>
+                <td>67388182</td>
+                <td>68467960</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>30581271</td>
+                <td>42813780</td>
+                <td>110201962</td>
+                <td>24409254</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>156</th>
+                <td>2001-10-12 00:00:00+00:00</td>
+                <td>Bandits</td>
+                <td>Original Screenplay</td>
+                <td>66829703</td>
+                <td>71523271</td>
+                <td>PG-13</td>
+                <td>123.0</td>
+                <td>60.0</td>
+                <td>6.5</td>
+                <td>5.0</td>
+                <td>112127.0</td>
+                <td>120708884</td>
+                <td>48283553</td>
+                <td>115113256</td>
+                <td>21004472</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>157</th>
+                <td>2001-12-26 00:00:00+00:00</td>
+                <td>Gosford Park</td>
+                <td>Original Screenplay</td>
+                <td>64849134</td>
+                <td>41300105</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>90.0</td>
+                <td>7.2</td>
+                <td>73.0</td>
+                <td>343437.0</td>
+                <td>28263473</td>
+                <td>0</td>
+                <td>64849134</td>
+                <td>378760</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>158</th>
+                <td>2001-03-23 00:00:00+00:00</td>
+                <td>Heartbreakers</td>
+                <td>Original Screenplay</td>
+                <td>64919245</td>
+                <td>57753825</td>
+                <td>PG-13</td>
+                <td>123.0</td>
+                <td>47.0</td>
+                <td>6.2</td>
+                <td>4.0</td>
+                <td>361277.0</td>
+                <td>61162538</td>
+                <td>28037875</td>
+                <td>92957120</td>
+                <td>18994707</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>159</th>
+                <td>2001-12-28 00:00:00+00:00</td>
+                <td>I Am Sam</td>
+                <td>Original Screenplay</td>
+                <td>63148816</td>
+                <td>92542418</td>
+                <td>PG-13</td>
+                <td>132.0</td>
+                <td>28.0</td>
+                <td>7.6</td>
+                <td>11.0</td>
+                <td>737937.0</td>
+                <td>34498213</td>
+                <td>81967008</td>
+                <td>145115824</td>
+                <td>65513</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>160</th>
+                <td>2001-09-14 00:00:00+00:00</td>
+                <td>Hardball</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>64737008</td>
+                <td>43728560</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>48.0</td>
+                <td>6.4</td>
+                <td>2.0</td>
+                <td>262781.0</td>
+                <td>33798730</td>
+                <td>5642506</td>
+                <td>70379514</td>
+                <td>15106973</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>161</th>
+                <td>2001-06-08 00:00:00+00:00</td>
+                <td>Evolution</td>
+                <td>Original Screenplay</td>
+                <td>61663322</td>
+                <td>98341932</td>
+                <td>PG-13</td>
+                <td>101.0</td>
+                <td>40.0</td>
+                <td>6.1</td>
+                <td>2.0</td>
+                <td>659020.0</td>
+                <td>128763240</td>
+                <td>96622000</td>
+                <td>158285322</td>
+                <td>21581284</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>162</th>
+                <td>2001-12-14 00:00:00+00:00</td>
+                <td>Not Another Teen Movie</td>
+                <td>Original Screenplay</td>
+                <td>60864056</td>
+                <td>62401343</td>
+                <td>R</td>
+                <td>89.0</td>
+                <td>32.0</td>
+                <td>5.7</td>
+                <td>5.0</td>
+                <td>1669744.0</td>
+                <td>24099771</td>
+                <td>39393153</td>
+                <td>100257209</td>
+                <td>20268094</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>163</th>
+                <td>2001-07-06 00:00:00+00:00</td>
+                <td>Kiss of the Dragon</td>
+                <td>Original Screenplay</td>
+                <td>59284965</td>
+                <td>36833473</td>
+                <td>R</td>
+                <td>98.0</td>
+                <td>58.0</td>
+                <td>6.6</td>
+                <td>NaN</td>
+                <td>268825.0</td>
+                <td>40238511</td>
+                <td>0</td>
+                <td>59284965</td>
+                <td>21413369</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>164</th>
+                <td>2001-11-21 00:00:00+00:00</td>
+                <td>Black Knight</td>
+                <td>Original Screenplay</td>
+                <td>53733850</td>
+                <td>33422806</td>
+                <td>PG-13</td>
+                <td>95.0</td>
+                <td>32.0</td>
+                <td>4.9</td>
+                <td>2.0</td>
+                <td>753527.0</td>
+                <td>56269505</td>
+                <td>0</td>
+                <td>53733850</td>
+                <td>17850211</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>165</th>
+                <td>2001-03-02 00:00:00+00:00</td>
+                <td>See Spot Run</td>
+                <td>Original Screenplay</td>
+                <td>53690204</td>
+                <td>43057552</td>
+                <td>PG</td>
+                <td>94.0</td>
+                <td>24.0</td>
+                <td>5.4</td>
+                <td>NaN</td>
+                <td>18179.0</td>
+                <td>25752645</td>
+                <td>15612663</td>
+                <td>69302867</td>
+                <td>15636848</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>166</th>
+                <td>2001-04-27 00:00:00+00:00</td>
+                <td>Driven</td>
+                <td>Original Screenplay</td>
+                <td>52498170</td>
+                <td>54616869</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>29.0</td>
+                <td>4.6</td>
+                <td>10.0</td>
+                <td>321454.0</td>
+                <td>115886912</td>
+                <td>35409889</td>
+                <td>87908059</td>
+                <td>19595356</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>167</th>
+                <td>2001-06-01 00:00:00+00:00</td>
+                <td>What's the Worst That Could Happen?</td>
+                <td>Original Screenplay</td>
+                <td>51936292</td>
+                <td>38462071</td>
+                <td>PG-13</td>
+                <td>94.0</td>
+                <td>37.0</td>
+                <td>5.5</td>
+                <td>NaN</td>
+                <td>11243.0</td>
+                <td>48286217</td>
+                <td>9969972</td>
+                <td>61906264</td>
+                <td>21003078</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>168</th>
+                <td>2001-07-11 00:00:00+00:00</td>
+                <td>Final Fantasy: The Spirits Within</td>
+                <td>Based on Game</td>
+                <td>51717479</td>
+                <td>85131830</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>49.0</td>
+                <td>6.4</td>
+                <td>11.0</td>
+                <td>1357953.0</td>
+                <td>220507036</td>
+                <td>85305642</td>
+                <td>137023121</td>
+                <td>18363009</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>169</th>
+                <td>2001-10-19 00:00:00+00:00</td>
+                <td>From Hell</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>50855491</td>
+                <td>68712365</td>
+                <td>R</td>
+                <td>122.0</td>
+                <td>54.0</td>
+                <td>6.8</td>
+                <td>10.0</td>
+                <td>1707047.0</td>
+                <td>56330300</td>
+                <td>59732742</td>
+                <td>110588233</td>
+                <td>17727657</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>170</th>
+                <td>2001-08-24 00:00:00+00:00</td>
+                <td>Jay and Silent Bob Strike Back</td>
+                <td>Spin-Off</td>
+                <td>48381798</td>
+                <td>33762400</td>
+                <td>R</td>
+                <td>104.0</td>
+                <td>51.0</td>
+                <td>6.8</td>
+                <td>3.0</td>
+                <td>348293.0</td>
+                <td>35409890</td>
+                <td>5960150</td>
+                <td>54341948</td>
+                <td>17734790</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>171</th>
+                <td>2001-01-12 00:00:00+00:00</td>
+                <td>Double Take</td>
+                <td>Remake</td>
+                <td>48001583</td>
+                <td>29823162</td>
+                <td>PG-13</td>
+                <td>88.0</td>
+                <td>25.0</td>
+                <td>5.5</td>
+                <td>NaN</td>
+                <td>100920.0</td>
+                <td>38628968</td>
+                <td>0</td>
+                <td>48001583</td>
+                <td>18889945</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>172</th>
+                <td>2001-10-19 00:00:00+00:00</td>
+                <td>Riding in Cars with Boys</td>
+                <td>Based on Real Life Events</td>
+                <td>47934451</td>
+                <td>29781453</td>
+                <td>PG-13</td>
+                <td>132.0</td>
+                <td>43.0</td>
+                <td>6.5</td>
+                <td>2.0</td>
+                <td>1323846.0</td>
+                <td>75648397</td>
+                <td>0</td>
+                <td>47934451</td>
+                <td>16746707</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>173</th>
+                <td>2001-06-27 00:00:00+00:00</td>
+                <td>Baby Boy</td>
+                <td>Original Screenplay</td>
+                <td>46249420</td>
+                <td>28734552</td>
+                <td>R</td>
+                <td>130.0</td>
+                <td>55.0</td>
+                <td>6.4</td>
+                <td>14.0</td>
+                <td>356460.0</td>
+                <td>25752645</td>
+                <td>0</td>
+                <td>46249420</td>
+                <td>13852352</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>174</th>
+                <td>2001-12-21 00:00:00+00:00</td>
+                <td>The Majestic</td>
+                <td>Original Screenplay</td>
+                <td>44558613</td>
+                <td>37306334</td>
+                <td>PG</td>
+                <td>152.0</td>
+                <td>27.0</td>
+                <td>6.9</td>
+                <td>NaN</td>
+                <td>515109.0</td>
+                <td>115420034</td>
+                <td>15245531</td>
+                <td>59804144</td>
+                <td>7861930</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>175</th>
+                <td>2001-03-30 00:00:00+00:00</td>
+                <td>Someone Like You</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>44001674</td>
+                <td>38684906</td>
+                <td>NaN</td>
+                <td>6.0</td>
+                <td>NaN</td>
+                <td>7.8</td>
+                <td>NaN</td>
+                <td>112106.0</td>
+                <td>37019433</td>
+                <td>18263252</td>
+                <td>62264926</td>
+                <td>16112467</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>176</th>
+                <td>2001-04-11 00:00:00+00:00</td>
+                <td>Joe Dirt</td>
+                <td>Original Screenplay</td>
+                <td>43598738</td>
+                <td>30987695</td>
+                <td>PG-13</td>
+                <td>91.0</td>
+                <td>20.0</td>
+                <td>6.0</td>
+                <td>3.0</td>
+                <td>1007175.0</td>
+                <td>25752645</td>
+                <td>6277207</td>
+                <td>49875945</td>
+                <td>12902088</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>177</th>
+                <td>2001-09-07 00:00:00+00:00</td>
+                <td>The Musketeer</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>43544206</td>
+                <td>27053815</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>27.0</td>
+                <td>4.9</td>
+                <td>NaN</td>
+                <td>82973.0</td>
+                <td>64381612</td>
+                <td>0</td>
+                <td>43544206</td>
+                <td>16598770</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>178</th>
+                <td>2001-04-20 00:00:00+00:00</td>
+                <td>Crocodile Dundee in Los Angeles</td>
+                <td>Original Screenplay</td>
+                <td>41188332</td>
+                <td>39393111</td>
+                <td>PG</td>
+                <td>92.0</td>
+                <td>37.0</td>
+                <td>4.8</td>
+                <td>2.0</td>
+                <td>144793.0</td>
+                <td>40238511</td>
+                <td>22216474</td>
+                <td>63404806</td>
+                <td>12416577</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>179</th>
+                <td>2001-08-17 00:00:00+00:00</td>
+                <td>Captain Corelli's Mandolin</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>41089143</td>
+                <td>62097495</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>36.0</td>
+                <td>5.9</td>
+                <td>5.0</td>
+                <td>61773.0</td>
+                <td>91743800</td>
+                <td>58859281</td>
+                <td>99948424</td>
+                <td>11603731</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>180</th>
+                <td>2001-02-16 00:00:00+00:00</td>
+                <td>Sweet November</td>
+                <td>Remake</td>
+                <td>40702223</td>
+                <td>65754228</td>
+                <td>PG-13</td>
+                <td>119.0</td>
+                <td>27.0</td>
+                <td>6.7</td>
+                <td>3.0</td>
+                <td>583916.0</td>
+                <td>64381615</td>
+                <td>65131862</td>
+                <td>105834085</td>
+                <td>17729451</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>181</th>
+                <td>2001-03-09 00:00:00+00:00</td>
+                <td>15 Minutes</td>
+                <td>Original Screenplay</td>
+                <td>39233254</td>
+                <td>56331864</td>
+                <td>R</td>
+                <td>120.0</td>
+                <td>34.0</td>
+                <td>6.1</td>
+                <td>NaN</td>
+                <td>58244.0</td>
+                <td>67600705</td>
+                <td>51435168</td>
+                <td>90668422</td>
+                <td>16937443</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>182</th>
+                <td>2001-09-28 00:00:00+00:00</td>
+                <td>Hearts in Atlantis</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>38927996</td>
+                <td>30885781</td>
+                <td>PG-13</td>
+                <td>101.0</td>
+                <td>55.0</td>
+                <td>6.9</td>
+                <td>8.0</td>
+                <td>106657.0</td>
+                <td>49895758</td>
+                <td>10783921</td>
+                <td>49711917</td>
+                <td>14520460</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>183</th>
+                <td>2001-05-18 00:00:00+00:00</td>
+                <td>Angel Eyes</td>
+                <td>Original Screenplay</td>
+                <td>38700647</td>
+                <td>29544532</td>
+                <td>R</td>
+                <td>102.0</td>
+                <td>39.0</td>
+                <td>5.6</td>
+                <td>5.0</td>
+                <td>742879.0</td>
+                <td>61162537</td>
+                <td>8852472</td>
+                <td>47553119</td>
+                <td>14848936</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>184</th>
+                <td>2001-11-09 00:00:00+00:00</td>
+                <td>Heist</td>
+                <td>Original Screenplay</td>
+                <td>37797417</td>
+                <td>28906817</td>
+                <td>R</td>
+                <td>109.0</td>
+                <td>66.0</td>
+                <td>6.5</td>
+                <td>NaN</td>
+                <td>152697.0</td>
+                <td>56333921</td>
+                <td>8729279</td>
+                <td>46526696</td>
+                <td>12592274</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>185</th>
+                <td>2001-12-21 00:00:00+00:00</td>
+                <td>Joe Somebody</td>
+                <td>Original Screenplay</td>
+                <td>36525570</td>
+                <td>24515990</td>
+                <td>PG</td>
+                <td>98.0</td>
+                <td>42.0</td>
+                <td>5.5</td>
+                <td>NaN</td>
+                <td>12651.0</td>
+                <td>60953842</td>
+                <td>2799266</td>
+                <td>39324836</td>
+                <td>5700347</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>186</th>
+                <td>2001-10-05 00:00:00+00:00</td>
+                <td>Joy Ride</td>
+                <td>Original Screenplay</td>
+                <td>35366724</td>
+                <td>21973182</td>
+                <td>R</td>
+                <td>97.0</td>
+                <td>75.0</td>
+                <td>6.6</td>
+                <td>3.0</td>
+                <td>485626.0</td>
+                <td>37019429</td>
+                <td>0</td>
+                <td>35366724</td>
+                <td>11825710</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>187</th>
+                <td>2001-01-19 00:00:00+00:00</td>
+                <td>The Pledge</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>31740023</td>
+                <td>29406132</td>
+                <td>R</td>
+                <td>124.0</td>
+                <td>71.0</td>
+                <td>6.8</td>
+                <td>6.0</td>
+                <td>36199.0</td>
+                <td>72429315</td>
+                <td>15590332</td>
+                <td>47330355</td>
+                <td>9279558</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>188</th>
+                <td>2001-08-24 00:00:00+00:00</td>
+                <td>Summer Catch</td>
+                <td>Original Screenplay</td>
+                <td>31698117</td>
+                <td>19693891</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>21.0</td>
+                <td>5.0</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>27362190</td>
+                <td>0</td>
+                <td>31698117</td>
+                <td>11296710</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>189</th>
+                <td>2001-02-09 00:00:00+00:00</td>
+                <td>Saving Silverman</td>
+                <td>Original Screenplay</td>
+                <td>31147136</td>
+                <td>25873142</td>
+                <td>PG-13</td>
+                <td>90.0</td>
+                <td>22.0</td>
+                <td>5.9</td>
+                <td>NaN</td>
+                <td>144530.0</td>
+                <td>35409893</td>
+                <td>10496736</td>
+                <td>41643872</td>
+                <td>11929676</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>190</th>
+                <td>2001-10-19 00:00:00+00:00</td>
+                <td>The Last Castle</td>
+                <td>Original Screenplay</td>
+                <td>29306633</td>
+                <td>20541668</td>
+                <td>R</td>
+                <td>131.0</td>
+                <td>43.0</td>
+                <td>7.0</td>
+                <td>4.0</td>
+                <td>412938.0</td>
+                <td>96572410</td>
+                <td>3756006</td>
+                <td>33062639</td>
+                <td>11408763</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>191</th>
+                <td>2001-09-14 00:00:00+00:00</td>
+                <td>The Glass House</td>
+                <td>Original Screenplay</td>
+                <td>28893549</td>
+                <td>22861785</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>34.0</td>
+                <td>5.8</td>
+                <td>3.0</td>
+                <td>26430.0</td>
+                <td>35409883</td>
+                <td>7903411</td>
+                <td>36796960</td>
+                <td>9236262</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>192</th>
+                <td>2001-09-07 00:00:00+00:00</td>
+                <td>Rock Star</td>
+                <td>Original Screenplay</td>
+                <td>27349149</td>
+                <td>19317765</td>
+                <td>R</td>
+                <td>105.0</td>
+                <td>54.0</td>
+                <td>6.3</td>
+                <td>NaN</td>
+                <td>23105.0</td>
+                <td>61162526</td>
+                <td>3743569</td>
+                <td>31092718</td>
+                <td>9687236</td>
+                <td>Music</td>
+              </tr>
+              <tr>
+                <th>193</th>
+                <td>2001-08-03 00:00:00+00:00</td>
+                <td>Original Sin</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>26591880</td>
+                <td>16521410</td>
+                <td>R</td>
+                <td>116.0</td>
+                <td>33.0</td>
+                <td>6.1</td>
+                <td>2.0</td>
+                <td>NaN</td>
+                <td>41848055</td>
+                <td>0</td>
+                <td>26591880</td>
+                <td>10305471</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>194</th>
+                <td>2001-02-23 00:00:00+00:00</td>
+                <td>3000 Miles to Graceland</td>
+                <td>Original Screenplay</td>
+                <td>25331967</td>
+                <td>18708848</td>
+                <td>R</td>
+                <td>125.0</td>
+                <td>21.0</td>
+                <td>6.0</td>
+                <td>12.0</td>
+                <td>295373.0</td>
+                <td>99791516</td>
+                <td>4780683</td>
+                <td>30112650</td>
+                <td>11525149</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>195</th>
+                <td>2001-10-26 00:00:00+00:00</td>
+                <td>Life as a House</td>
+                <td>Original Screenplay</td>
+                <td>25193550</td>
+                <td>23889158</td>
+                <td>R</td>
+                <td>125.0</td>
+                <td>45.0</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>636075.0</td>
+                <td>28971725</td>
+                <td>13257012</td>
+                <td>38450562</td>
+                <td>473294</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>196</th>
+                <td>2001-04-11 00:00:00+00:00</td>
+                <td>Josie and the Pussycats</td>
+                <td>Based on TV</td>
+                <td>22940501</td>
+                <td>14252830</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>47.0</td>
+                <td>5.4</td>
+                <td>5.0</td>
+                <td>341942.0</td>
+                <td>35409881</td>
+                <td>0</td>
+                <td>22940501</td>
+                <td>7343454</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>197</th>
+                <td>2001-04-20 00:00:00+00:00</td>
+                <td>Freddy Got Fingered</td>
+                <td>Original Screenplay</td>
+                <td>22934352</td>
+                <td>14249005</td>
+                <td>R</td>
+                <td>87.0</td>
+                <td>13.0</td>
+                <td>4.6</td>
+                <td>6.0</td>
+                <td>72313.0</td>
+                <td>24143108</td>
+                <td>0</td>
+                <td>22934352</td>
+                <td>11425257</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>198</th>
+                <td>2001-08-10 00:00:00+00:00</td>
+                <td>Osmosis Jones</td>
+                <td>Original Screenplay</td>
+                <td>21884780</td>
+                <td>13596911</td>
+                <td>PG</td>
+                <td>95.0</td>
+                <td>57.0</td>
+                <td>6.3</td>
+                <td>8.0</td>
+                <td>63752.0</td>
+                <td>112667840</td>
+                <td>0</td>
+                <td>21884780</td>
+                <td>8484287</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>199</th>
+                <td>2001-03-30 00:00:00+00:00</td>
+                <td>The Tailor of Panama</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>21715361</td>
+                <td>27491653</td>
+                <td>R</td>
+                <td>109.0</td>
+                <td>66.0</td>
+                <td>6.1</td>
+                <td>NaN</td>
+                <td>84697.0</td>
+                <td>28971727</td>
+                <td>22533566</td>
+                <td>44248927</td>
+                <td>2956835</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>200</th>
+                <td>2002-05-03 00:00:00+00:00</td>
+                <td>Spider-Man</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>639233368</td>
+                <td>825677927</td>
+                <td>PG-13</td>
+                <td>121.0</td>
+                <td>73.0</td>
+                <td>7.3</td>
+                <td>61.0</td>
+                <td>6905543.0</td>
+                <td>217950083</td>
+                <td>655418236</td>
+                <td>1294651604</td>
+                <td>180073990</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>201</th>
+                <td>2002-12-18 00:00:00+00:00</td>
+                <td>The Lord of the Rings: The Two Towers</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>532244571</td>
+                <td>927598249</td>
+                <td>PG-13</td>
+                <td>179.0</td>
+                <td>87.0</td>
+                <td>8.7</td>
+                <td>137.0</td>
+                <td>1205243.0</td>
+                <td>146054993</td>
+                <td>909035815</td>
+                <td>1441280386</td>
+                <td>96345841</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>202</th>
+                <td>2002-05-16 00:00:00+00:00</td>
+                <td>Star Wars Episode II: Attack of the Clones</td>
+                <td>Original Screenplay</td>
+                <td>487136844</td>
+                <td>656695615</td>
+                <td>PG</td>
+                <td>142.0</td>
+                <td>54.0</td>
+                <td>6.5</td>
+                <td>63.0</td>
+                <td>2490903.0</td>
+                <td>180318414</td>
+                <td>542552824</td>
+                <td>1029689668</td>
+                <td>125482508</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>203</th>
+                <td>2002-11-15 00:00:00+00:00</td>
+                <td>Harry Potter and the Chamber of Secrets</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>410227600</td>
+                <td>879225135</td>
+                <td>PG</td>
+                <td>161.0</td>
+                <td>63.0</td>
+                <td>7.4</td>
+                <td>43.0</td>
+                <td>NaN</td>
+                <td>156436071</td>
+                <td>965197662</td>
+                <td>1375425262</td>
+                <td>138222983</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>204</th>
+                <td>2002-08-02 00:00:00+00:00</td>
+                <td>Signs</td>
+                <td>Original Screenplay</td>
+                <td>357440160</td>
+                <td>408269295</td>
+                <td>PG-13</td>
+                <td>106.0</td>
+                <td>59.0</td>
+                <td>6.7</td>
+                <td>34.0</td>
+                <td>703363.0</td>
+                <td>110856839</td>
+                <td>282697987</td>
+                <td>640138147</td>
+                <td>94258719</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>205</th>
+                <td>2002-07-25 00:00:00+00:00</td>
+                <td>Austin Powers in Goldmember</td>
+                <td>Original Screenplay</td>
+                <td>334165750</td>
+                <td>296338663</td>
+                <td>PG-13</td>
+                <td>94.0</td>
+                <td>62.0</td>
+                <td>6.2</td>
+                <td>22.0</td>
+                <td>156210.0</td>
+                <td>98783129</td>
+                <td>130489181</td>
+                <td>464654931</td>
+                <td>114574613</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>206</th>
+                <td>2002-07-03 00:00:00+00:00</td>
+                <td>Men in Black II</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>298574055</td>
+                <td>441767803</td>
+                <td>PG-13</td>
+                <td>88.0</td>
+                <td>49.0</td>
+                <td>6.2</td>
+                <td>16.0</td>
+                <td>1601622.0</td>
+                <td>219518067</td>
+                <td>394111762</td>
+                <td>692685817</td>
+                <td>81768521</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>207</th>
+                <td>2002-03-15 00:00:00+00:00</td>
+                <td>Ice Age</td>
+                <td>Original Screenplay</td>
+                <td>276573013</td>
+                <td>386116343</td>
+                <td>PG</td>
+                <td>81.0</td>
+                <td>60.0</td>
+                <td>7.5</td>
+                <td>29.0</td>
+                <td>548483.0</td>
+                <td>101919101</td>
+                <td>328852075</td>
+                <td>605425088</td>
+                <td>72617287</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>208</th>
+                <td>2002-12-27 00:00:00+00:00</td>
+                <td>Chicago</td>
+                <td>Based on Musical or Opera</td>
+                <td>258399866</td>
+                <td>306770545</td>
+                <td>PG-13</td>
+                <td>113.0</td>
+                <td>82.0</td>
+                <td>7.1</td>
+                <td>128.0</td>
+                <td>1198354.0</td>
+                <td>45416302</td>
+                <td>206012931</td>
+                <td>464412797</td>
+                <td>3141186</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>209</th>
+                <td>2002-12-25 00:00:00+00:00</td>
+                <td>Catch Me if You Can</td>
+                <td>Based on Factual Book/Article</td>
+                <td>254258652</td>
+                <td>355612291</td>
+                <td>PG-13</td>
+                <td>141.0</td>
+                <td>75.0</td>
+                <td>8.1</td>
+                <td>44.0</td>
+                <td>2513772.0</td>
+                <td>80321407</td>
+                <td>295035190</td>
+                <td>549293842</td>
+                <td>46465934</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>210</th>
+                <td>2002-11-22 00:00:00+00:00</td>
+                <td>Die Another Day</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>251944803</td>
+                <td>431942139</td>
+                <td>PG-13</td>
+                <td>133.0</td>
+                <td>56.0</td>
+                <td>6.1</td>
+                <td>35.0</td>
+                <td>351147.0</td>
+                <td>222292074</td>
+                <td>424233466</td>
+                <td>676178269</td>
+                <td>73688320</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>211</th>
+                <td>2002-06-14 00:00:00+00:00</td>
+                <td>Scooby-Doo</td>
+                <td>Based on TV</td>
+                <td>240363132</td>
+                <td>276294164</td>
+                <td>PG</td>
+                <td>86.0</td>
+                <td>35.0</td>
+                <td>5.0</td>
+                <td>14.0</td>
+                <td>1499691.0</td>
+                <td>131710839</td>
+                <td>192862301</td>
+                <td>433225433</td>
+                <td>84914781</td>
+                <td>Mystery</td>
+              </tr>
+              <tr>
+                <th>212</th>
+                <td>2002-06-21 00:00:00+00:00</td>
+                <td>Lilo &amp; Stitch</td>
+                <td>Original Screenplay</td>
+                <td>228567741</td>
+                <td>245800000</td>
+                <td>PG</td>
+                <td>85.0</td>
+                <td>73.0</td>
+                <td>7.2</td>
+                <td>26.0</td>
+                <td>4149479.0</td>
+                <td>125438895</td>
+                <td>156843264</td>
+                <td>385411005</td>
+                <td>55287525</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>213</th>
+                <td>2002-08-09 00:00:00+00:00</td>
+                <td>xXx</td>
+                <td>Original Screenplay</td>
+                <td>222544282</td>
+                <td>267200000</td>
+                <td>PG-13</td>
+                <td>124.0</td>
+                <td>48.0</td>
+                <td>5.9</td>
+                <td>14.0</td>
+                <td>907585.0</td>
+                <td>109759034</td>
+                <td>196421631</td>
+                <td>418965913</td>
+                <td>69784955</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>214</th>
+                <td>2002-11-01 00:00:00+00:00</td>
+                <td>The Santa Clause 2</td>
+                <td>Original Screenplay</td>
+                <td>218249983</td>
+                <td>172825854</td>
+                <td>G</td>
+                <td>104.0</td>
+                <td>48.0</td>
+                <td>5.6</td>
+                <td>3.0</td>
+                <td>131444.0</td>
+                <td>101893782</td>
+                <td>52671247</td>
+                <td>270921230</td>
+                <td>45473934</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <th>215</th>
+                <td>2002-06-21 00:00:00+00:00</td>
+                <td>Minority Report</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>207012925</td>
+                <td>358824714</td>
+                <td>PG-13</td>
+                <td>145.0</td>
+                <td>80.0</td>
+                <td>7.6</td>
+                <td>89.0</td>
+                <td>429479.0</td>
+                <td>159934588</td>
+                <td>355619262</td>
+                <td>562632187</td>
+                <td>55941238</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>216</th>
+                <td>2002-10-18 00:00:00+00:00</td>
+                <td>The Ring</td>
+                <td>Remake</td>
+                <td>202311026</td>
+                <td>248218486</td>
+                <td>PG-13</td>
+                <td>115.0</td>
+                <td>57.0</td>
+                <td>7.1</td>
+                <td>12.0</td>
+                <td>1173978.0</td>
+                <td>75223693</td>
+                <td>186687124</td>
+                <td>388998150</td>
+                <td>23531527</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>217</th>
+                <td>2002-09-27 00:00:00+00:00</td>
+                <td>Sweet Home Alabama</td>
+                <td>Original Screenplay</td>
+                <td>199405419</td>
+                <td>182365114</td>
+                <td>PG-13</td>
+                <td>108.0</td>
+                <td>45.0</td>
+                <td>6.2</td>
+                <td>6.0</td>
+                <td>2270290.0</td>
+                <td>59564211</td>
+                <td>86448114</td>
+                <td>285853533</td>
+                <td>55878660</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>218</th>
+                <td>2002-06-28 00:00:00+00:00</td>
+                <td>Mr. Deeds</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>198026393</td>
+                <td>171269535</td>
+                <td>PG-13</td>
+                <td>96.0</td>
+                <td>24.0</td>
+                <td>5.8</td>
+                <td>9.0</td>
+                <td>80926.0</td>
+                <td>78399311</td>
+                <td>70521878</td>
+                <td>268548271</td>
+                <td>58270738</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>219</th>
+                <td>2002-06-14 00:00:00+00:00</td>
+                <td>The Bourne Identity</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>190461649</td>
+                <td>214357371</td>
+                <td>PG-13</td>
+                <td>119.0</td>
+                <td>68.0</td>
+                <td>7.9</td>
+                <td>6.0</td>
+                <td>419015.0</td>
+                <td>94079170</td>
+                <td>145647743</td>
+                <td>336109392</td>
+                <td>42521652</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>220</th>
+                <td>2002-05-31 00:00:00+00:00</td>
+                <td>The Sum of All Fears</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>185761391</td>
+                <td>193500000</td>
+                <td>PG-13</td>
+                <td>124.0</td>
+                <td>45.0</td>
+                <td>6.4</td>
+                <td>5.0</td>
+                <td>599707.0</td>
+                <td>106623059</td>
+                <td>117643932</td>
+                <td>303405323</td>
+                <td>48887497</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>221</th>
+                <td>2002-11-08 00:00:00+00:00</td>
+                <td>8 Mile</td>
+                <td>Original Screenplay</td>
+                <td>182938566</td>
+                <td>245768384</td>
+                <td>R</td>
+                <td>110.0</td>
+                <td>77.0</td>
+                <td>7.1</td>
+                <td>21.0</td>
+                <td>4576.0</td>
+                <td>64258219</td>
+                <td>202247743</td>
+                <td>385186309</td>
+                <td>80307971</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>222</th>
+                <td>2002-07-12 00:00:00+00:00</td>
+                <td>Road to Perdition</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>163156037</td>
+                <td>183354514</td>
+                <td>R</td>
+                <td>117.0</td>
+                <td>72.0</td>
+                <td>7.7</td>
+                <td>82.0</td>
+                <td>485768.0</td>
+                <td>125438892</td>
+                <td>124341301</td>
+                <td>287497338</td>
+                <td>34620320</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>223</th>
+                <td>2002-03-29 00:00:00+00:00</td>
+                <td>Panic Room</td>
+                <td>Original Screenplay</td>
+                <td>149442198</td>
+                <td>196308367</td>
+                <td>R</td>
+                <td>112.0</td>
+                <td>65.0</td>
+                <td>6.8</td>
+                <td>9.0</td>
+                <td>219517.0</td>
+                <td>75263334</td>
+                <td>158366599</td>
+                <td>307808797</td>
+                <td>47128568</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>224</th>
+                <td>2002-12-13 00:00:00+00:00</td>
+                <td>Maid in Manhattan</td>
+                <td>Original Screenplay</td>
+                <td>146278386</td>
+                <td>163838217</td>
+                <td>PG-13</td>
+                <td>105.0</td>
+                <td>45.0</td>
+                <td>5.2</td>
+                <td>8.0</td>
+                <td>1238947.0</td>
+                <td>85649560</td>
+                <td>108861090</td>
+                <td>255139476</td>
+                <td>29138614</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>225</th>
+                <td>2002-12-20 00:00:00+00:00</td>
+                <td>Two Weeks Notice</td>
+                <td>Original Screenplay</td>
+                <td>144975092</td>
+                <td>199043309</td>
+                <td>PG-13</td>
+                <td>101.0</td>
+                <td>42.0</td>
+                <td>6.1</td>
+                <td>3.0</td>
+                <td>1380724.0</td>
+                <td>93176724</td>
+                <td>164128302</td>
+                <td>309103394</td>
+                <td>22251369</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>226</th>
+                <td>2002-10-04 00:00:00+00:00</td>
+                <td>Red Dragon</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>145752812</td>
+                <td>206455420</td>
+                <td>R</td>
+                <td>124.0</td>
+                <td>60.0</td>
+                <td>7.2</td>
+                <td>10.0</td>
+                <td>400803.0</td>
+                <td>122302920</td>
+                <td>177966429</td>
+                <td>323719241</td>
+                <td>57295696</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>227</th>
+                <td>2002-04-19 00:00:00+00:00</td>
+                <td>The Scorpion King</td>
+                <td>Spin-Off</td>
+                <td>142028189</td>
+                <td>165890634</td>
+                <td>PG-13</td>
+                <td>92.0</td>
+                <td>45.0</td>
+                <td>5.5</td>
+                <td>3.0</td>
+                <td>418899.0</td>
+                <td>94079171</td>
+                <td>118086033</td>
+                <td>260114222</td>
+                <td>56566473</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>228</th>
+                <td>2002-08-07 00:00:00+00:00</td>
+                <td>Spy Kids 2: Island of Lost Dreams</td>
+                <td>Original Screenplay</td>
+                <td>134590019</td>
+                <td>119721296</td>
+                <td>PG</td>
+                <td>100.0</td>
+                <td>66.0</td>
+                <td>5.1</td>
+                <td>3.0</td>
+                <td>561907.0</td>
+                <td>59576486</td>
+                <td>53109302</td>
+                <td>187699321</td>
+                <td>26200666</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>229</th>
+                <td>2002-03-22 00:00:00+00:00</td>
+                <td>Blade 2</td>
+                <td>Based on Comic/Graphic Novel</td>
+                <td>128068234</td>
+                <td>154338601</td>
+                <td>TV-MA</td>
+                <td>24.0</td>
+                <td>NaN</td>
+                <td>6.9</td>
+                <td>NaN</td>
+                <td>1702273.0</td>
+                <td>84671255</td>
+                <td>113932563</td>
+                <td>242000797</td>
+                <td>51003480</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>230</th>
+                <td>2002-01-18 00:00:00+00:00</td>
+                <td>Snow Dogs</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>127243160</td>
+                <td>116898028</td>
+                <td>PG</td>
+                <td>99.0</td>
+                <td>29.0</td>
+                <td>5.1</td>
+                <td>NaN</td>
+                <td>593308.0</td>
+                <td>50175556</td>
+                <td>56051327</td>
+                <td>183294487</td>
+                <td>27932511</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>231</th>
+                <td>2002-03-01 00:00:00+00:00</td>
+                <td>We Were Soldiers</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>122491384</td>
+                <td>114658262</td>
+                <td>R</td>
+                <td>138.0</td>
+                <td>65.0</td>
+                <td>7.2</td>
+                <td>5.0</td>
+                <td>55209.0</td>
+                <td>109759029</td>
+                <td>57291180</td>
+                <td>179782564</td>
+                <td>31692987</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>232</th>
+                <td>2002-12-20 00:00:00+00:00</td>
+                <td>Gangs of New York</td>
+                <td>Original Screenplay</td>
+                <td>120127047</td>
+                <td>183124621</td>
+                <td>R</td>
+                <td>167.0</td>
+                <td>72.0</td>
+                <td>7.5</td>
+                <td>124.0</td>
+                <td>309343.0</td>
+                <td>149906710</td>
+                <td>162879236</td>
+                <td>283006283</td>
+                <td>14676747</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>233</th>
+                <td>2002-03-29 00:00:00+00:00</td>
+                <td>The Rookie</td>
+                <td>Original Screenplay</td>
+                <td>118539867</td>
+                <td>80491516</td>
+                <td>G</td>
+                <td>127.0</td>
+                <td>72.0</td>
+                <td>6.9</td>
+                <td>4.0</td>
+                <td>113844.0</td>
+                <td>34495695</td>
+                <td>7669716</td>
+                <td>126209583</td>
+                <td>25121778</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>234</th>
+                <td>2002-05-24 00:00:00+00:00</td>
+                <td>Spirit: Stallion of the Cimarron</td>
+                <td>Original Screenplay</td>
+                <td>114800594</td>
+                <td>106515310</td>
+                <td>G</td>
+                <td>83.0</td>
+                <td>52.0</td>
+                <td>7.1</td>
+                <td>21.0</td>
+                <td>596576.0</td>
+                <td>125438894</td>
+                <td>52213939</td>
+                <td>167014533</td>
+                <td>27863170</td>
+                <td>Western</td>
+              </tr>
+              <tr>
+                <th>235</th>
+                <td>2002-02-15 00:00:00+00:00</td>
+                <td>John Q</td>
+                <td>Original Screenplay</td>
+                <td>111368775</td>
+                <td>102226631</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>30.0</td>
+                <td>7.1</td>
+                <td>8.0</td>
+                <td>12377.0</td>
+                <td>56447502</td>
+                <td>48921168</td>
+                <td>160289943</td>
+                <td>31791223</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>236</th>
+                <td>2002-06-07 00:00:00+00:00</td>
+                <td>The Divine Secrets of the Ya-Ya Sisterhood</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>109110734</td>
+                <td>73826768</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>12377.0</td>
+                <td>42335624</td>
+                <td>6648612</td>
+                <td>115759346</td>
+                <td>25350277</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>237</th>
+                <td>2002-05-24 00:00:00+00:00</td>
+                <td>Insomnia</td>
+                <td>Remake</td>
+                <td>105467736</td>
+                <td>113622499</td>
+                <td>R</td>
+                <td>118.0</td>
+                <td>78.0</td>
+                <td>7.2</td>
+                <td>10.0</td>
+                <td>23114.0</td>
+                <td>72127361</td>
+                <td>72690765</td>
+                <td>178158501</td>
+                <td>32818214</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>238</th>
+                <td>2002-04-12 00:00:00+00:00</td>
+                <td>Changing Lanes</td>
+                <td>Original Screenplay</td>
+                <td>104726182</td>
+                <td>66790248</td>
+                <td>R</td>
+                <td>98.0</td>
+                <td>69.0</td>
+                <td>6.4</td>
+                <td>7.0</td>
+                <td>35521.0</td>
+                <td>70559375</td>
+                <td>0</td>
+                <td>104726182</td>
+                <td>26856563</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>239</th>
+                <td>2002-12-13 00:00:00+00:00</td>
+                <td>About Schmidt</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>98896648</td>
+                <td>107054484</td>
+                <td>R</td>
+                <td>125.0</td>
+                <td>85.0</td>
+                <td>7.1</td>
+                <td>69.0</td>
+                <td>305744.0</td>
+                <td>45640943</td>
+                <td>63972274</td>
+                <td>162868922</td>
+                <td>429583</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>240</th>
+                <td>2002-07-19 00:00:00+00:00</td>
+                <td>Stuart Little 2</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>101851376</td>
+                <td>166000000</td>
+                <td>PG</td>
+                <td>77.0</td>
+                <td>66.0</td>
+                <td>5.4</td>
+                <td>4.0</td>
+                <td>619576.0</td>
+                <td>188158345</td>
+                <td>158434334</td>
+                <td>260285710</td>
+                <td>23700349</td>
+                <td>Family</td>
+              </tr>
+              <tr>
+                <th>241</th>
+                <td>2002-03-08 00:00:00+00:00</td>
+                <td>The Time Machine</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>88881014</td>
+                <td>98983590</td>
+                <td>PG-13</td>
+                <td>96.0</td>
+                <td>42.0</td>
+                <td>6.0</td>
+                <td>3.0</td>
+                <td>1454550.0</td>
+                <td>125438896</td>
+                <td>66323889</td>
+                <td>155204903</td>
+                <td>35452853</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>242</th>
+                <td>2002-12-13 00:00:00+00:00</td>
+                <td>Drumline</td>
+                <td>Original Screenplay</td>
+                <td>87924737</td>
+                <td>56398162</td>
+                <td>PG-13</td>
+                <td>118.0</td>
+                <td>63.0</td>
+                <td>5.8</td>
+                <td>13.0</td>
+                <td>591751.0</td>
+                <td>31180000</td>
+                <td>0</td>
+                <td>87924737</td>
+                <td>19650735</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>243</th>
+                <td>2002-01-25 00:00:00+00:00</td>
+                <td>The Count of Monte Cristo</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>85028914</td>
+                <td>75389090</td>
+                <td>PG-13</td>
+                <td>131.0</td>
+                <td>61.0</td>
+                <td>7.8</td>
+                <td>NaN</td>
+                <td>1400097.0</td>
+                <td>62719444</td>
+                <td>33180132</td>
+                <td>118209046</td>
+                <td>17837645</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>244</th>
+                <td>2002-05-08 00:00:00+00:00</td>
+                <td>Unfaithful</td>
+                <td>Remake</td>
+                <td>82715147</td>
+                <td>119114494</td>
+                <td>R</td>
+                <td>124.0</td>
+                <td>63.0</td>
+                <td>6.7</td>
+                <td>15.0</td>
+                <td>336737.0</td>
+                <td>78399304</td>
+                <td>104054722</td>
+                <td>186769869</td>
+                <td>22054158</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>245</th>
+                <td>2002-07-03 00:00:00+00:00</td>
+                <td>Like Mike</td>
+                <td>Original Screenplay</td>
+                <td>80645328</td>
+                <td>62432423</td>
+                <td>PG</td>
+                <td>99.0</td>
+                <td>47.0</td>
+                <td>5.2</td>
+                <td>6.0</td>
+                <td>10354174.0</td>
+                <td>47039585</td>
+                <td>17247847</td>
+                <td>97893175</td>
+                <td>19097162</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>246</th>
+                <td>2002-09-27 00:00:00+00:00</td>
+                <td>The Tuxedo</td>
+                <td>Original Screenplay</td>
+                <td>79295435</td>
+                <td>104429625</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>30.0</td>
+                <td>5.4</td>
+                <td>NaN</td>
+                <td>571764.0</td>
+                <td>94052229</td>
+                <td>84401883</td>
+                <td>163697318</td>
+                <td>23593045</td>
+                <td>Thriller</td>
+              </tr>
+              <tr>
+                <th>247</th>
+                <td>2002-02-15 00:00:00+00:00</td>
+                <td>Peter Pan 2: Return to Neverland</td>
+                <td>Based on Play</td>
+                <td>75937972</td>
+                <td>109862682</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>571764.0</td>
+                <td>31359722</td>
+                <td>96325187</td>
+                <td>172263159</td>
+                <td>18642776</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>248</th>
+                <td>2002-02-08 00:00:00+00:00</td>
+                <td>Big Fat Liar</td>
+                <td>Original Screenplay</td>
+                <td>74967420</td>
+                <td>52461017</td>
+                <td>PG</td>
+                <td>88.0</td>
+                <td>36.0</td>
+                <td>5.4</td>
+                <td>3.0</td>
+                <td>317297.0</td>
+                <td>23519793</td>
+                <td>7290731</td>
+                <td>82258151</td>
+                <td>18116536</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>249</th>
+                <td>2002-12-13 00:00:00+00:00</td>
+                <td>Star Trek: Nemesis</td>
+                <td>Based on TV</td>
+                <td>67626163</td>
+                <td>67312826</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>51.0</td>
+                <td>6.4</td>
+                <td>4.0</td>
+                <td>29332.0</td>
+                <td>93807079</td>
+                <td>37614163</td>
+                <td>105240326</td>
+                <td>28944651</td>
+                <td>Science Fiction</td>
+              </tr>
+              <tr>
+                <th>250</th>
+                <td>2002-02-19 00:00:00+00:00</td>
+                <td>Reign of Fire</td>
+                <td>Original Screenplay</td>
+                <td>67520587</td>
+                <td>82150183</td>
+                <td>PG-13</td>
+                <td>101.0</td>
+                <td>39.0</td>
+                <td>6.2</td>
+                <td>3.0</td>
+                <td>NaN</td>
+                <td>94079162</td>
+                <td>61289753</td>
+                <td>128810340</td>
+                <td>24511198</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>251</th>
+                <td>2002-12-27 00:00:00+00:00</td>
+                <td>The Hours</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>63028956</td>
+                <td>97030468</td>
+                <td>PG-13</td>
+                <td>110.0</td>
+                <td>80.0</td>
+                <td>7.5</td>
+                <td>125.0</td>
+                <td>558886.0</td>
+                <td>37808909</td>
+                <td>83715692</td>
+                <td>146744648</td>
+                <td>512117</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>252</th>
+                <td>2002-04-05 00:00:00+00:00</td>
+                <td>High Crimes</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>65139169</td>
+                <td>63781100</td>
+                <td>PG-13</td>
+                <td>115.0</td>
+                <td>48.0</td>
+                <td>6.4</td>
+                <td>2.0</td>
+                <td>321821.0</td>
+                <td>65855414</td>
+                <td>34868705</td>
+                <td>100007874</td>
+                <td>21960507</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>253</th>
+                <td>2002-01-11 00:00:00+00:00</td>
+                <td>Orange County</td>
+                <td>Original Screenplay</td>
+                <td>64381062</td>
+                <td>43308707</td>
+                <td>PG-13</td>
+                <td>82.0</td>
+                <td>48.0</td>
+                <td>6.2</td>
+                <td>3.0</td>
+                <td>99285.0</td>
+                <td>28223748</td>
+                <td>3526386</td>
+                <td>67907448</td>
+                <td>23603248</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>254</th>
+                <td>2002-06-14 00:00:00+00:00</td>
+                <td>Windtalkers</td>
+                <td>Original Screenplay</td>
+                <td>64152693</td>
+                <td>77628265</td>
+                <td>R</td>
+                <td>134.0</td>
+                <td>51.0</td>
+                <td>6.1</td>
+                <td>4.0</td>
+                <td>8271.0</td>
+                <td>180318410</td>
+                <td>57567353</td>
+                <td>121720046</td>
+                <td>22767805</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>255</th>
+                <td>2002-05-17 00:00:00+00:00</td>
+                <td>About a Boy</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>63978537</td>
+                <td>130759651</td>
+                <td>PG-13</td>
+                <td>101.0</td>
+                <td>75.0</td>
+                <td>7.0</td>
+                <td>29.0</td>
+                <td>12444.0</td>
+                <td>42335624</td>
+                <td>141050778</td>
+                <td>205029315</td>
+                <td>13418244</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>256</th>
+                <td>2002-08-02 00:00:00+00:00</td>
+                <td>The Master of Disguise</td>
+                <td>Original Screenplay</td>
+                <td>63289457</td>
+                <td>40363530</td>
+                <td>PG</td>
+                <td>80.0</td>
+                <td>12.0</td>
+                <td>3.3</td>
+                <td>6.0</td>
+                <td>55899.0</td>
+                <td>25087778</td>
+                <td>0</td>
+                <td>63289457</td>
+                <td>19685517</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>257</th>
+                <td>2002-03-15 00:00:00+00:00</td>
+                <td>Resident Evil</td>
+                <td>Based on Game</td>
+                <td>62907146</td>
+                <td>103787401</td>
+                <td>R</td>
+                <td>100.0</td>
+                <td>33.0</td>
+                <td>6.7</td>
+                <td>7.0</td>
+                <td>59826.0</td>
+                <td>54879513</td>
+                <td>99830055</td>
+                <td>162737201</td>
+                <td>27764496</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>258</th>
+                <td>2002-08-16 00:00:00+00:00</td>
+                <td>Blue Crush</td>
+                <td>Based on Factual Book/Article</td>
+                <td>62905124</td>
+                <td>51618420</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>61.0</td>
+                <td>5.6</td>
+                <td>7.0</td>
+                <td>593308.0</td>
+                <td>47039582</td>
+                <td>18031839</td>
+                <td>80936963</td>
+                <td>22217508</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>259</th>
+                <td>2002-12-20 00:00:00+00:00</td>
+                <td>The Wild Thornberrys Movie</td>
+                <td>Based on TV</td>
+                <td>62411854</td>
+                <td>60694737</td>
+                <td>PG</td>
+                <td>85.0</td>
+                <td>69.0</td>
+                <td>5.6</td>
+                <td>12.0</td>
+                <td>323487.0</td>
+                <td>38901696</td>
+                <td>32033275</td>
+                <td>94445129</td>
+                <td>9357953</td>
+                <td>Animation</td>
+              </tr>
+              <tr>
+                <th>260</th>
+                <td>2002-02-08 00:00:00+00:00</td>
+                <td>Collateral Damage</td>
+                <td>Original Screenplay</td>
+                <td>62795230</td>
+                <td>78353508</td>
+                <td>R</td>
+                <td>108.0</td>
+                <td>33.0</td>
+                <td>5.5</td>
+                <td>NaN</td>
+                <td>129325.0</td>
+                <td>133278822</td>
+                <td>60061985</td>
+                <td>122857215</td>
+                <td>23611412</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>261</th>
+                <td>2002-05-24 00:00:00+00:00</td>
+                <td>Enough</td>
+                <td>Original Screenplay</td>
+                <td>61429331</td>
+                <td>50970660</td>
+                <td>PG-13</td>
+                <td>115.0</td>
+                <td>25.0</td>
+                <td>5.8</td>
+                <td>4.0</td>
+                <td>196760.0</td>
+                <td>59583474</td>
+                <td>18491958</td>
+                <td>79921289</td>
+                <td>21966942</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>262</th>
+                <td>2002-05-31 00:00:00+00:00</td>
+                <td>Undercover Brother</td>
+                <td>Original Screenplay</td>
+                <td>59944793</td>
+                <td>40796145</td>
+                <td>PG-13</td>
+                <td>86.0</td>
+                <td>69.0</td>
+                <td>5.8</td>
+                <td>7.0</td>
+                <td>501113.0</td>
+                <td>39199654</td>
+                <td>4022997</td>
+                <td>63967790</td>
+                <td>18874923</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>263</th>
+                <td>2002-11-27 00:00:00+00:00</td>
+                <td>Treasure Planet</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>59640938</td>
+                <td>91800000</td>
+                <td>PG</td>
+                <td>95.0</td>
+                <td>60.0</td>
+                <td>7.2</td>
+                <td>13.0</td>
+                <td>372992.0</td>
+                <td>156453492</td>
+                <td>83983367</td>
+                <td>143624305</td>
+                <td>18904663</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>264</th>
+                <td>2002-03-15 00:00:00+00:00</td>
+                <td>Showtime</td>
+                <td>Original Screenplay</td>
+                <td>59503140</td>
+                <td>78948765</td>
+                <td>PG-13</td>
+                <td>95.0</td>
+                <td>32.0</td>
+                <td>5.5</td>
+                <td>6.0</td>
+                <td>47979.0</td>
+                <td>133278827</td>
+                <td>64287434</td>
+                <td>123790574</td>
+                <td>23537715</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>265</th>
+                <td>2002-03-01 00:00:00+00:00</td>
+                <td>40 Days and 40 Nights</td>
+                <td>Original Screenplay</td>
+                <td>59489047</td>
+                <td>95092667</td>
+                <td>R</td>
+                <td>96.0</td>
+                <td>53.0</td>
+                <td>5.6</td>
+                <td>2.0</td>
+                <td>415191.0</td>
+                <td>26655761</td>
+                <td>89614923</td>
+                <td>149103970</td>
+                <td>19175730</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>266</th>
+                <td>2002-03-29 00:00:00+00:00</td>
+                <td>Clockstoppers</td>
+                <td>Original Screenplay</td>
+                <td>57992748</td>
+                <td>38788828</td>
+                <td>PG</td>
+                <td>94.0</td>
+                <td>40.0</td>
+                <td>5.2</td>
+                <td>NaN</td>
+                <td>210795.0</td>
+                <td>40767636</td>
+                <td>2827591</td>
+                <td>60820339</td>
+                <td>15849724</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>267</th>
+                <td>2002-01-25 00:00:00+00:00</td>
+                <td>The Mothman Prophecies</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>55238102</td>
+                <td>56438555</td>
+                <td>PG-13</td>
+                <td>119.0</td>
+                <td>52.0</td>
+                <td>6.4</td>
+                <td>2.0</td>
+                <td>488456.0</td>
+                <td>65855411</td>
+                <td>33256761</td>
+                <td>88494863</td>
+                <td>17575321</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>268</th>
+                <td>2002-07-19 00:00:00+00:00</td>
+                <td>K-19: The Widowmaker</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>55144452</td>
+                <td>65716126</td>
+                <td>PG-13</td>
+                <td>138.0</td>
+                <td>58.0</td>
+                <td>6.7</td>
+                <td>2.0</td>
+                <td>105937.0</td>
+                <td>141118754</td>
+                <td>47897524</td>
+                <td>103041976</td>
+                <td>20036446</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>269</th>
+                <td>2002-11-01 00:00:00+00:00</td>
+                <td>I Spy</td>
+                <td>Based on TV</td>
+                <td>52597332</td>
+                <td>60279822</td>
+                <td>PG-13</td>
+                <td>97.0</td>
+                <td>35.0</td>
+                <td>5.4</td>
+                <td>6.0</td>
+                <td>95264.0</td>
+                <td>109704663</td>
+                <td>41873776</td>
+                <td>94471108</td>
+                <td>19986313</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>270</th>
+                <td>2002-12-27 00:00:00+00:00</td>
+                <td>The Pianist</td>
+                <td>Based on Real Life Events</td>
+                <td>49186748</td>
+                <td>111854182</td>
+                <td>R</td>
+                <td>150.0</td>
+                <td>85.0</td>
+                <td>8.5</td>
+                <td>73.0</td>
+                <td>2615674.0</td>
+                <td>52938870</td>
+                <td>119997082</td>
+                <td>169183830</td>
+                <td>168286</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>271</th>
+                <td>2002-12-06 00:00:00+00:00</td>
+                <td>Analyze That</td>
+                <td>Original Screenplay</td>
+                <td>50290316</td>
+                <td>54994757</td>
+                <td>R</td>
+                <td>96.0</td>
+                <td>37.0</td>
+                <td>5.9</td>
+                <td>NaN</td>
+                <td>224452.0</td>
+                <td>93935482</td>
+                <td>35809001</td>
+                <td>86099317</td>
+                <td>17275395</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>272</th>
+                <td>2002-04-19 00:00:00+00:00</td>
+                <td>Murder by Numbers</td>
+                <td>Original Screenplay</td>
+                <td>49979355</td>
+                <td>56643267</td>
+                <td>R</td>
+                <td>115.0</td>
+                <td>50.0</td>
+                <td>6.2</td>
+                <td>2.0</td>
+                <td>543118.0</td>
+                <td>78399310</td>
+                <td>38836506</td>
+                <td>88815861</td>
+                <td>14593865</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>273</th>
+                <td>2002-02-22 00:00:00+00:00</td>
+                <td>Queen of the Damned</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>47522215</td>
+                <td>30307804</td>
+                <td>R</td>
+                <td>101.0</td>
+                <td>30.0</td>
+                <td>5.3</td>
+                <td>7.0</td>
+                <td>692651.0</td>
+                <td>54879513</td>
+                <td>0</td>
+                <td>47522215</td>
+                <td>23139609</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>274</th>
+                <td>2002-07-12 00:00:00+00:00</td>
+                <td>Halloween: Resurrection</td>
+                <td>NaN</td>
+                <td>47446711</td>
+                <td>37659652</td>
+                <td>R</td>
+                <td>94.0</td>
+                <td>19.0</td>
+                <td>4.0</td>
+                <td>NaN</td>
+                <td>211206.0</td>
+                <td>23519790</td>
+                <td>11603096</td>
+                <td>59049807</td>
+                <td>19273873</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>275</th>
+                <td>2002-06-07 00:00:00+00:00</td>
+                <td>Bad Company</td>
+                <td>Original Screenplay</td>
+                <td>47285783</td>
+                <td>69157016</td>
+                <td>PG-13</td>
+                <td>116.0</td>
+                <td>37.0</td>
+                <td>5.6</td>
+                <td>NaN</td>
+                <td>194561.0</td>
+                <td>109759029</td>
+                <td>61151459</td>
+                <td>108437242</td>
+                <td>17259398</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>276</th>
+                <td>2002-10-25 00:00:00+00:00</td>
+                <td>Ghost Ship</td>
+                <td>Original Screenplay</td>
+                <td>47204139</td>
+                <td>68349884</td>
+                <td>R</td>
+                <td>91.0</td>
+                <td>28.0</td>
+                <td>5.5</td>
+                <td>NaN</td>
+                <td>230017.0</td>
+                <td>31350824</td>
+                <td>59937122</td>
+                <td>107141261</td>
+                <td>18032089</td>
+                <td>Horror</td>
+              </tr>
+              <tr>
+                <th>277</th>
+                <td>2002-02-22 00:00:00+00:00</td>
+                <td>Dragonfly</td>
+                <td>Original Screenplay</td>
+                <td>47139631</td>
+                <td>30063805</td>
+                <td>PG-13</td>
+                <td>104.0</td>
+                <td>25.0</td>
+                <td>6.1</td>
+                <td>NaN</td>
+                <td>982362.0</td>
+                <td>94079171</td>
+                <td>0</td>
+                <td>47139631</td>
+                <td>16018586</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>278</th>
+                <td>2002-08-09 00:00:00+00:00</td>
+                <td>Blood Work</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>41080479</td>
+                <td>26199517</td>
+                <td>R</td>
+                <td>110.0</td>
+                <td>64.0</td>
+                <td>6.4</td>
+                <td>NaN</td>
+                <td>86009.0</td>
+                <td>78399305</td>
+                <td>0</td>
+                <td>41080479</td>
+                <td>11465762</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>279</th>
+                <td>2002-10-11 00:00:00+00:00</td>
+                <td>The Transporter</td>
+                <td>Original Screenplay</td>
+                <td>39663756</td>
+                <td>43928932</td>
+                <td>PG-13</td>
+                <td>92.0</td>
+                <td>51.0</td>
+                <td>6.8</td>
+                <td>NaN</td>
+                <td>2036039.0</td>
+                <td>32927109</td>
+                <td>29214946</td>
+                <td>68878702</td>
+                <td>14280669</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>280</th>
+                <td>2002-04-12 00:00:00+00:00</td>
+                <td>The Sweetest Thing</td>
+                <td>Original Screenplay</td>
+                <td>38306329</td>
+                <td>63078756</td>
+                <td>R</td>
+                <td>84.0</td>
+                <td>32.0</td>
+                <td>5.2</td>
+                <td>4.0</td>
+                <td>553284.0</td>
+                <td>67423405</td>
+                <td>60600288</td>
+                <td>98906617</td>
+                <td>14787155</td>
+                <td>Romance</td>
+              </tr>
+              <tr>
+                <th>281</th>
+                <td>2002-12-06 00:00:00+00:00</td>
+                <td>Adaptation</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>34339270</td>
+                <td>32531759</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>313073.0</td>
+                <td>28236368</td>
+                <td>15313634</td>
+                <td>49652904</td>
+                <td>586824</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>282</th>
+                <td>2002-09-06 00:00:00+00:00</td>
+                <td>City by the Sea</td>
+                <td>Based on Factual Book/Article</td>
+                <td>35176069</td>
+                <td>22433915</td>
+                <td>R</td>
+                <td>108.0</td>
+                <td>50.0</td>
+                <td>6.1</td>
+                <td>NaN</td>
+                <td>15448.0</td>
+                <td>62719447</td>
+                <td>0</td>
+                <td>35176069</td>
+                <td>14010624</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>283</th>
+                <td>2002-10-11 00:00:00+00:00</td>
+                <td>Tuck Everlasting</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>30031616</td>
+                <td>19344615</td>
+                <td>PG</td>
+                <td>90.0</td>
+                <td>66.0</td>
+                <td>6.6</td>
+                <td>3.0</td>
+                <td>1287200.0</td>
+                <td>23508728</td>
+                <td>286204</td>
+                <td>30317820</td>
+                <td>8257462</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>284</th>
+                <td>2002-02-15 00:00:00+00:00</td>
+                <td>Hart's War</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>29912175</td>
+                <td>33076815</td>
+                <td>R</td>
+                <td>125.0</td>
+                <td>49.0</td>
+                <td>6.3</td>
+                <td>NaN</td>
+                <td>223261.0</td>
+                <td>109759005</td>
+                <td>21951801</td>
+                <td>51863976</td>
+                <td>12185998</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>285</th>
+                <td>2002-02-08 00:00:00+00:00</td>
+                <td>Rollerball</td>
+                <td>Remake</td>
+                <td>29776900</td>
+                <td>25852508</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>14.0</td>
+                <td>3.1</td>
+                <td>3.0</td>
+                <td>80786.0</td>
+                <td>109759005</td>
+                <td>10759465</td>
+                <td>40536365</td>
+                <td>14133115</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>286</th>
+                <td>2002-09-20 00:00:00+00:00</td>
+                <td>The Four Feathers</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>28703815</td>
+                <td>29882645</td>
+                <td>PG-13</td>
+                <td>132.0</td>
+                <td>49.0</td>
+                <td>6.5</td>
+                <td>NaN</td>
+                <td>243797.0</td>
+                <td>54879515</td>
+                <td>18151758</td>
+                <td>46855573</td>
+                <td>10753059</td>
+                <td>War</td>
+              </tr>
+              <tr>
+                <th>287</th>
+                <td>2002-10-11 00:00:00+00:00</td>
+                <td>Punch-Drunk Love</td>
+                <td>Original Screenplay</td>
+                <td>27896086</td>
+                <td>24591031</td>
+                <td>R</td>
+                <td>95.0</td>
+                <td>78.0</td>
+                <td>7.3</td>
+                <td>36.0</td>
+                <td>684929.0</td>
+                <td>39199647</td>
+                <td>10662304</td>
+                <td>38558390</td>
+                <td>575769</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>288</th>
+                <td>2002-07-17 00:00:00+00:00</td>
+                <td>Eight Legged Freaks</td>
+                <td>Original Screenplay</td>
+                <td>27073635</td>
+                <td>36722311</td>
+                <td>PG-13</td>
+                <td>99.0</td>
+                <td>53.0</td>
+                <td>5.4</td>
+                <td>NaN</td>
+                <td>404042.0</td>
+                <td>47039574</td>
+                <td>30506427</td>
+                <td>57580062</td>
+                <td>10169106</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>289</th>
+                <td>2002-07-26 00:00:00+00:00</td>
+                <td>The Country Bears</td>
+                <td>Based on Theme Park Ride</td>
+                <td>26638505</td>
+                <td>16988996</td>
+                <td>G</td>
+                <td>88.0</td>
+                <td>37.0</td>
+                <td>4.1</td>
+                <td>4.0</td>
+                <td>263428.0</td>
+                <td>31359716</td>
+                <td>0</td>
+                <td>26638505</td>
+                <td>8325495</td>
+                <td>Adventure</td>
+              </tr>
+              <tr>
+                <th>290</th>
+                <td>2002-08-23 00:00:00+00:00</td>
+                <td>Serving Sara</td>
+                <td>Original Screenplay</td>
+                <td>26546294</td>
+                <td>20146150</td>
+                <td>PG-13</td>
+                <td>99.0</td>
+                <td>18.0</td>
+                <td>5.3</td>
+                <td>NaN</td>
+                <td>268626.0</td>
+                <td>45471595</td>
+                <td>5042588</td>
+                <td>31588882</td>
+                <td>9028833</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>291</th>
+                <td>2002-10-11 00:00:00+00:00</td>
+                <td>White Oleander</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>25648750</td>
+                <td>21657770</td>
+                <td>PG-13</td>
+                <td>109.0</td>
+                <td>61.0</td>
+                <td>7.1</td>
+                <td>7.0</td>
+                <td>244011.0</td>
+                <td>25087771</td>
+                <td>8310324</td>
+                <td>33959074</td>
+                <td>8792448</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>292</th>
+                <td>2002-12-31 00:00:00+00:00</td>
+                <td>Confessions of a Dangerous Mind</td>
+                <td>Based on Fiction Book/Short Story</td>
+                <td>24194065</td>
+                <td>33013805</td>
+                <td>R</td>
+                <td>113.0</td>
+                <td>67.0</td>
+                <td>7.0</td>
+                <td>12.0</td>
+                <td>125897.0</td>
+                <td>43830600</td>
+                <td>25702999</td>
+                <td>49897064</td>
+                <td>131792</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>293</th>
+                <td>2002-11-15 00:00:00+00:00</td>
+                <td>Half Past Dead</td>
+                <td>Original Screenplay</td>
+                <td>24399149</td>
+                <td>19233280</td>
+                <td>PG-13</td>
+                <td>98.0</td>
+                <td>23.0</td>
+                <td>4.6</td>
+                <td>4.0</td>
+                <td>121133.0</td>
+                <td>39181925</td>
+                <td>5744728</td>
+                <td>30143877</td>
+                <td>12256946</td>
+                <td>Crime</td>
+              </tr>
+              <tr>
+                <th>294</th>
+                <td>2002-11-27 00:00:00+00:00</td>
+                <td>Solaris</td>
+                <td>Remake</td>
+                <td>23466750</td>
+                <td>14970038</td>
+                <td>PG-13</td>
+                <td>99.0</td>
+                <td>65.0</td>
+                <td>6.2</td>
+                <td>11.0</td>
+                <td>273639.0</td>
+                <td>73676315</td>
+                <td>0</td>
+                <td>23466750</td>
+                <td>10585439</td>
+                <td>Drama</td>
+              </tr>
+              <tr>
+                <th>295</th>
+                <td>2002-04-26 00:00:00+00:00</td>
+                <td>Life, or Something Like It</td>
+                <td>Original Screenplay</td>
+                <td>22655185</td>
+                <td>14448589</td>
+                <td>PG-13</td>
+                <td>103.0</td>
+                <td>31.0</td>
+                <td>5.8</td>
+                <td>NaN</td>
+                <td>298663.0</td>
+                <td>62719439</td>
+                <td>0</td>
+                <td>22655185</td>
+                <td>9751671</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th>296</th>
+                <td>2002-09-20 00:00:00+00:00</td>
+                <td>Ballistic: Ecks vs. Sever</td>
+                <td>Original Screenplay</td>
+                <td>22414107</td>
+                <td>14294842</td>
+                <td>R</td>
+                <td>91.0</td>
+                <td>19.0</td>
+                <td>3.7</td>
+                <td>5.0</td>
+                <td>267019.0</td>
+                <td>109758994</td>
+                <td>0</td>
+                <td>22414107</td>
+                <td>10992322</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>297</th>
+                <td>2002-09-13 00:00:00+00:00</td>
+                <td>Stealing Harvard</td>
+                <td>Original Screenplay</td>
+                <td>21910297</td>
+                <td>13973532</td>
+                <td>PG-13</td>
+                <td>85.0</td>
+                <td>25.0</td>
+                <td>5.1</td>
+                <td>NaN</td>
+                <td>131569.0</td>
+                <td>39199640</td>
+                <td>0</td>
+                <td>21910297</td>
+                <td>9473017</td>
+                <td>Action</td>
+              </tr>
+              <tr>
+                <th>298</th>
+                <td>2002-06-21 00:00:00+00:00</td>
+                <td>Juwanna Mann</td>
+                <td>Original Screenplay</td>
+                <td>21280413</td>
+                <td>13771817</td>
+                <td>PG-13</td>
+                <td>91.0</td>
+                <td>24.0</td>
+                <td>4.6</td>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td>24460574</td>
+                <td>313597</td>
+                <td>21594010</td>
+                <td>8583576</td>
+                <td>Comedy</td>
+              </tr>
+              <tr>
+                <th>299</th>
+                <td>2002-08-30 00:00:00+00:00</td>
+                <td>FearDotCom</td>
+                <td>Original Screenplay</td>
+                <td>20709991</td>
+                <td>13208023</td>
+                <td>R</td>
+                <td>101.0</td>
+                <td>16.0</td>
+                <td>3.4</td>
+                <td>3.0</td>
+                <td>206478.0</td>
+                <td>62719427</td>
+                <td>0</td>
+                <td>20709991</td>
+                <td>8953398</td>
+                <td>Horror</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+     
+      
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Release Month Plot</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Another bootsctrap link -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- Not using another style sheet -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body style="background-color:lightgrey";>
+  
+  <div class="container--fluid bg-secondary" >
+
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand bg-secondary ml-auto" href="./index.html">Box Office Analytics Visualization</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./Nom.html">Nominations Vs Box office</a>
+                  <a class="dropdown-item" href="./Open.html">Opening vs Box office</a>
+                  <a class="dropdown-item" href="./Budget.html">Budget Vs Return</a>
+                  <a class="dropdown-item" href="./Trailer.html">Trailer views Vs Box office</a>
+                  <a class="dropdown-item" href="./Critic.html">Critic score Vs Box office</a>
+                  <a class="dropdown-item" href="./Month.html">Release month Vs Box office</a>
+                  <a class="dropdown-item" href="./SourceMean.html">Source Vs Mean Box office</a>
+                  <a class="dropdown-item" href="./SourceMedian.html">Source Vs Median Return</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compare.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./data.html">Data Table</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-7 mr-auto ml-auto" style="background-color:slategray";>
+        <h1 class="text-light"><strong>Release Month Vs Mean World Wide Box office</strong></h1>
+        <hr style="border-top: 3px solid black;">
+        <p class="text-light text-center">
+          <img src="Resources/assets/images/opening_weekend.png" class="img-fluid" alt="Release month Vs Box office" style="width: 75%; width: 75%;"><br><br>
+          This is a bar plot of the release month of the movie vs mean world wide box office. The shows what we expect to see in modern release schedules.<br>
+          We had a peak during summer block buster season and a smaller peak during awards season at the end of the year.
+          
+          
+        </p>
+      </div>
+
+     
+      <div class="col-md-4 ml-auto mr-auto" style="background-color:rgb(148, 196, 245)";>
+        <h1 class="text-primary"><strong>Visualizations</strong></h1>
+        <hr style="border-top: 3px solid black;">
+          <a href="./Nom.html"><img src="Resources/assets/images/nominations_scatter.png" class="float-left img-fluid" alt="Nominations Vs Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./Open.html"><img src="Resources/assets/images/openVSworld.png" class="float-right img-fluid" alt="Opening vs Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./Budget.html"><img src="Resources/assets/images/pro2.png" class="float-left img-fluid" alt="Budget Vs Return" style="width: 45%; width: 45%;"></a>
+          <a href="./Trailer.html"><img src="Resources/assets/images/you1.png" class="float-right img-fluid" alt="Trailer views Vs Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./Critic.html"><img src="Resources/assets/images/critic.png" class="float-left img-fluid" alt="Critic score Vs Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./Month.html"><img src="Resources/assets/images/opening_weekend.png" class="float-right img-fluid" alt="Release month Vs Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./SourceMean.html"><img src="Resources/assets/images/source9.png" class="float-left img-fluid" alt="Source Vs Mean Box office" style="width: 45%; width: 45%;"></a>
+          <a href="./SourceMedian.html"><img src="Resources/assets/images/source11.png" class="float-right img-fluid" alt="Source Vs Median Box office" style="width: 45%; width: 45%;"></a>
+      </div>
+    </div>
+
+  
+    
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
