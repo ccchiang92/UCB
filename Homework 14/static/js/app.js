@@ -6,6 +6,7 @@ var tableBody = d3.select('#data-table').select('tbody');
 data.forEach((sighting) => {
     var row = tableBody.append('tr');
     // for each column
+    // Set up id names for filtering
     Object.entries(sighting).forEach(([key,value])=>{
         if (key === 'datetime'){
             var cell = row.append('td');
@@ -41,8 +42,10 @@ data.forEach((sighting) => {
 });
 
 // form input
+// Grab buttons and select list
 var button = d3.select('#filter-btn');
 var filterSelect = d3.select('#filterSelect')
+// Reaction Code
 button.on("click", function() {
     var filterForm = d3.select('#filter-form');
     var filterFormInput = filterForm.property('value');
@@ -50,8 +53,10 @@ button.on("click", function() {
     var rows = tableBody.selectAll('tr');
     rows.each(function(){
         var thisRow=d3.select(this);
+        // Match Filter
         var colValue = thisRow.select(columnToFilter).text();
         if (filterFormInput===''){
+            // Reset if filter is empty
             thisRow.style("display", "table-row");
         }
         else if (colValue===filterFormInput){
